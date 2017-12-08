@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReadExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,12 +63,6 @@
     </Compile>
     <Compile Include="ExtractZipForm.Designer.cs">
       <DependentUpon>ExtractZipForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="InstallAppForm.cs">
       <SubType>Form</SubType>
@@ -78,14 +78,14 @@
     <Compile Include="WriteExcelForm.Designer.cs">
       <DependentUpon>WriteExcelForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReadExcelForm.resx">
       <DependentUpon>ReadExcelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExtractZipForm.resx">
       <DependentUpon>ExtractZipForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InstallAppForm.resx">
       <DependentUpon>InstallAppForm.cs</DependentUpon>
