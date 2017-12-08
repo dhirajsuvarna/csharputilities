@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelUtilityForm.cs">
+    <Compile Include="ReadExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExcelUtilityForm.Designer.cs">
-      <DependentUpon>ExcelUtilityForm.cs</DependentUpon>
+    <Compile Include="ReadExcelForm.Designer.cs">
+      <DependentUpon>ReadExcelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ExtractZipForm.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <Compile Include="WriteExcelForm.Designer.cs">
       <DependentUpon>WriteExcelForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ExcelUtilityForm.resx">
-      <DependentUpon>ExcelUtilityForm.cs</DependentUpon>
+    <EmbeddedResource Include="ReadExcelForm.resx">
+      <DependentUpon>ReadExcelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExtractZipForm.resx">
       <DependentUpon>ExtractZipForm.cs</DependentUpon>

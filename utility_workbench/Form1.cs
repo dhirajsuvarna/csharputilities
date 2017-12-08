@@ -49,7 +49,7 @@ namespace utility_workbench
 
         private void excelButton_Click(object sender, EventArgs e)
         {
-            ExcelUtilityForm excelUtilForm = new ExcelUtilityForm();
+            ReadExcelForm excelUtilForm = new ReadExcelForm();
             excelUtilForm.ShowDialog();
         }
 

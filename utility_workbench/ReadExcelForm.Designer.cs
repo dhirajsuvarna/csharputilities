@@ -1,6 +1,6 @@
 ﻿namespace utility_workbench
 {
-    partial class ExcelUtilityForm
+    partial class ReadExcelForm
     {
         /// <summary>
         /// Required designer variable.

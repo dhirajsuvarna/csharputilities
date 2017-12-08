@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace utility_workbench
 {
-    public partial class ExcelUtilityForm : Form
+    public partial class ReadExcelForm : Form
     {
-        public ExcelUtilityForm()
+        public ReadExcelForm()
         {
             InitializeComponent();
         }
