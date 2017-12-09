@@ -35,6 +35,7 @@
             this.writeExcelButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridViewButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CmdButton
@@ -107,11 +108,22 @@
             this.button2.Text = "Read Response XML";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewButton
+            // 
+            this.dataGridViewButton.Location = new System.Drawing.Point(136, 135);
+            this.dataGridViewButton.Name = "dataGridViewButton";
+            this.dataGridViewButton.Size = new System.Drawing.Size(105, 41);
+            this.dataGridViewButton.TabIndex = 7;
+            this.dataGridViewButton.Text = "DataGridView Sample";
+            this.dataGridViewButton.UseVisualStyleBackColor = true;
+            this.dataGridViewButton.Click += new System.EventHandler(this.dataGridViewButton_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 196);
+            this.Controls.Add(this.dataGridViewButton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.writeExcelButton);
@@ -137,6 +149,7 @@
         private System.Windows.Forms.Button writeExcelButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button dataGridViewButton;
     }
 }
 

@@ -58,5 +58,11 @@ namespace utility_workbench
             WriteExcelForm writeExcelForm = new WriteExcelForm();
             writeExcelForm.ShowDialog();
         }
+
+        private void dataGridViewButton_Click(object sender, EventArgs e)
+        {
+            DataGridViewForm dataGridViewForm = new DataGridViewForm();
+            dataGridViewForm.ShowDialog();
+        }
     }
 }
