@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(447, 293);
             this.Name = "DataGridViewForm";
             this.Text = "DataGridViewForm";
+            this.Load += new System.EventHandler(this.DataGridViewForm_Load);
             this.ResumeLayout(false);
 
         }

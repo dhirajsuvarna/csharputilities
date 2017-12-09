@@ -21,5 +21,10 @@ namespace utility_workbench
         {
             InitializeComponent();
         }
+
+        private void DataGridViewForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

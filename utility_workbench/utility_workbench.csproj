@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGridViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewForm.Designer.cs">
+      <DependentUpon>DataGridViewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="WriteExcelForm.Designer.cs">
       <DependentUpon>WriteExcelForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DataGridViewForm.resx">
+      <DependentUpon>DataGridViewForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
