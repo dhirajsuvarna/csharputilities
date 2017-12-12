@@ -15,10 +15,39 @@ namespace utility_workbench
 {
     public partial class ReadExcelForm : Form
     {
+        BackgroundWorker bwThread = null;
+
         public ReadExcelForm()
         {
             InitializeComponent();
+            bwThread = new BackgroundWorker();
+            bwThread.DoWork += new DoWorkEventHandler(processHeavyTask);
+            bwThread.ProgressChanged += new ProgressChangedEventHandler(progressChanged);
+            bwThread.RunWorkerCompleted += new RunWorkerCompletedEventHandler(heavyTaskCompleted);
+
+            bwThread.WorkerReportsProgress = true;
+            bwThread.WorkerSupportsCancellation = true;
         }
+
+        private void heavyTaskCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void progressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void processHeavyTask(object sender, DoWorkEventArgs e)
+        {
+            DataGridViewRow row = e.Argument as DataGridViewRow;
+            if(row != null)
+            {
+
+            }
+        }
+
 
         private void browseButton_Click(object sender, EventArgs e)
         {
@@ -95,6 +124,8 @@ namespace utility_workbench
 
             foreach (DataGridViewRow row in rows)
             {
+                bwThread.RunWorkerAsync(row);
+
                 excelDataGridView.Rows[row.Index].Selected = true;
 
                 string partName = row.Cells["Part Name"].Value.ToString();
@@ -127,11 +158,15 @@ namespace utility_workbench
 
         private void excelDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == excelDataGridView.Columns["Links"].Index)
+            if(e.ColumnIndex == excelDataGridView.Columns["Links"].Index) //Handling of HyperLink Click
             {
                 string cellValue = excelDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
                 //MessageBox.Show(cellValue);
                 Process.Start(cellValue);
+            }
+            if(excelDataGridView.Columns[e.ColumnIndex].Name.Equals("Compare"))
+            {
+                MessageBox.Show("I have am still not implemented, Please stop clicking ME!!!");
             }
         }
 
