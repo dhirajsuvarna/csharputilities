@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <sample>
+    <SrNo>1</SrNo>
+    <Part_x0020_Name>mill_part_1</Part_x0020_Name>
+    <Process>Mill</Process>
+    <Quantity>101</Quantity>
+    <Plant>India</Plant>
+    <Material_x0020_Family>Steel</Material_x0020_Family>
+    <Material_x0020_Grade>309</Material_x0020_Grade>
+  </sample>
+  <sample>
+    <SrNo>2</SrNo>
+    <Part_x0020_Name>sheetmetal_part_1</Part_x0020_Name>
+    <Process>SM</Process>
+    <Quantity>102</Quantity>
+    <Plant>China</Plant>
+    <Material_x0020_Family>Bronze</Material_x0020_Family>
+    <Material_x0020_Grade>154</Material_x0020_Grade>
+  </sample>
+  <sample>
+    <SrNo>3</SrNo>
+    <Part_x0020_Name>injection_molding_part_1</Part_x0020_Name>
+    <Process>IM</Process>
+    <Quantity>103</Quantity>
+    <Plant>United States</Plant>
+    <Material_x0020_Family>Plastic</Material_x0020_Family>
+  </sample>
+  <sample>
+    <SrNo>1</SrNo>
+    <Part_x0020_Name>mill_part_1</Part_x0020_Name>
+    <Process>Mill</Process>
+    <Quantity>101</Quantity>
+    <Plant>India</Plant>
+    <Material_x0020_Family>Steel</Material_x0020_Family>
+    <Material_x0020_Grade>309</Material_x0020_Grade>
+  </sample>
+  <sample>
+    <SrNo>2</SrNo>
+    <Part_x0020_Name>sheetmetal_part_1</Part_x0020_Name>
+    <Process>SM</Process>
+    <Quantity>102</Quantity>
+    <Plant>China</Plant>
+    <Material_x0020_Family>Bronze</Material_x0020_Family>
+    <Material_x0020_Grade>154</Material_x0020_Grade>
+  </sample>
+  <sample>
+    <SrNo>3</SrNo>
+    <Part_x0020_Name>injection_molding_part_1</Part_x0020_Name>
+    <Process>IM</Process>
+    <Quantity>103</Quantity>
+    <Plant>United States</Plant>
+    <Material_x0020_Family>Plastic</Material_x0020_Family>
+  </sample>
+</DocumentElement>

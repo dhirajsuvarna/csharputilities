@@ -79,10 +79,13 @@
             // excelDataGridView
             // 
             this.excelDataGridView.AllowUserToAddRows = false;
+            this.excelDataGridView.AllowUserToDeleteRows = false;
+            this.excelDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.excelDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.excelDataGridView.Location = new System.Drawing.Point(48, 145);
             this.excelDataGridView.MultiSelect = false;
             this.excelDataGridView.Name = "excelDataGridView";
+            this.excelDataGridView.ReadOnly = true;
             this.excelDataGridView.Size = new System.Drawing.Size(956, 286);
             this.excelDataGridView.TabIndex = 4;
             this.excelDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.excelDataGridView_CellContentClick);

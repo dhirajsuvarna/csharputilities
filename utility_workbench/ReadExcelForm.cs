@@ -15,11 +15,12 @@ namespace utility_workbench
 {
     public partial class ReadExcelForm : Form
     {
-        BackgroundWorker bwThread = null;
-
+        #region Constructor and Initializers
         public ReadExcelForm()
         {
             InitializeComponent();
+
+            //BackgroundWorker Thread
             bwThread = new BackgroundWorker();
             bwThread.DoWork += new DoWorkEventHandler(processHeavyTask);
             bwThread.ProgressChanged += new ProgressChangedEventHandler(progressChanged);
@@ -27,27 +28,40 @@ namespace utility_workbench
 
             bwThread.WorkerReportsProgress = true;
             bwThread.WorkerSupportsCancellation = true;
-        }
 
-        private void heavyTaskCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+            //Context Menu
+            menuStrip = createContextMenuStrip();
 
-        private void progressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
-
-        private void processHeavyTask(object sender, DoWorkEventArgs e)
+        
+        private void PerformAutomation()
         {
-            DataGridViewRow row = e.Argument as DataGridViewRow;
-            if(row != null)
+            string isRegressionSystem = Environment.GetEnvironmentVariable("IsRegressionSystem", EnvironmentVariableTarget.User);
+            if(isRegressionSystem.ToLower().Equals("yes"))
             {
-
+                excuteButton.PerformClick();
             }
         }
 
+        ContextMenuStrip menuStrip = null;
+        private ContextMenuStrip createContextMenuStrip()
+        {
+            ToolStripMenuItem openFolderStripItem = new ToolStripMenuItem();
+            openFolderStripItem.Text = "Open Containing Foler";
+            openFolderStripItem.Click += new EventHandler(openFolderMenu_Click);
+
+            ContextMenuStrip menuStrip = new ContextMenuStrip();
+            menuStrip.Items.Add(openFolderStripItem);
+
+            return menuStrip;
+        }
+
+        #endregion
+
+        private void openFolderMenu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("you clicked me");
+        }
 
         private void browseButton_Click(object sender, EventArgs e)
         {
@@ -61,6 +75,7 @@ namespace utility_workbench
             }
         }
 
+        #region Populate DataGridView
         private void readExcel_Click(object sender, EventArgs e)
         {
             try
@@ -75,17 +90,48 @@ namespace utility_workbench
 
                 excelDataGridView.DataSource = dataTable.DefaultView;
 
+                //AddCheckBoxColumn();
+                AddStatusColumn();
                 AddLinkColumn();
-                CreateUnboundButtonColumn();
-                
+                AddButtonColumn();
+
+                excelDataGridView.Columns["Part Name"].ContextMenuStrip = menuStrip;
+                excelDataGridView.Columns["Links"].ContextMenuStrip = menuStrip;
+
+                PerformAutomation();
             }
             catch (Exception exp)
             {
                 MessageBox.Show(exp.Message);
             }
         }
+        #endregion
 
-        private void CreateUnboundButtonColumn()
+        #region Created Unbound Columns for DataGridView
+
+        private void AddStatusColumn()
+        {
+            DataGridViewTextBoxColumn textColumn = new DataGridViewTextBoxColumn();
+            textColumn.HeaderText = "Status";
+            textColumn.Name = "Status";
+
+            int textColumnIndex = excelDataGridView.Columns["Part Name"].Index;
+            excelDataGridView.Columns.Insert(textColumnIndex, textColumn);
+        }
+
+        private void AddCheckBoxColumn()
+        {
+            DataGridViewCheckBoxColumn checkboxColumn = new DataGridViewCheckBoxColumn();
+
+            checkboxColumn.HeaderText = "Select";
+            checkboxColumn.Name = "SelectParts";
+            checkboxColumn.FlatStyle = FlatStyle.Standard;
+            checkboxColumn.TrueValue = true;
+
+            excelDataGridView.Columns.Insert(1, checkboxColumn);
+        }
+
+        private void AddButtonColumn()
         {
             // Initialize the button column.
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
@@ -114,48 +160,13 @@ namespace utility_workbench
             linksColumn.TrackVisitedState = true;
             linksColumn.VisitedLinkColor = Color.YellowGreen;
             //linksColumn.Text = "link";
+            
 
             excelDataGridView.Columns.Insert(excelDataGridView.ColumnCount, linksColumn);
         }
+        #endregion
 
-        private void excuteButton_Click(object sender, EventArgs e)
-        {
-            DataGridViewRowCollection rows = excelDataGridView.Rows;
-
-            foreach (DataGridViewRow row in rows)
-            {
-                bwThread.RunWorkerAsync(row);
-
-                excelDataGridView.Rows[row.Index].Selected = true;
-
-                string partName = row.Cells["Part Name"].Value.ToString();
-                string process = row.Cells["Process"].Value.ToString();
-                string quantity = row.Cells["Quantity"].Value.ToString();
-                string plant = row.Cells["Plant"].Value.ToString();
-                string materialFamily = row.Cells["Material Family"].Value.ToString();
-                string materialGrade = row.Cells["Material Grade"].Value.ToString();
-
-                Stopwatch stopWatch = new Stopwatch();
-                stopWatch.Start();
-                while (stopWatch.Elapsed < TimeSpan.FromSeconds(5))
-                {
-                }
-                stopWatch.Stop();
-
-                string fileName = partName + ".txt";
-                string[] lines = { partName, process, quantity, plant, materialFamily, materialGrade };
-                File.WriteAllLines(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\dump\" + fileName, lines);
-
-                string [] files = Directory.GetFiles(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\dump", fileName);
-                if (files.Length > 0)
-                {
-                    row.Cells["Links"].Value = files[0];
-                    excelDataGridView.Update();
-                    excelDataGridView.Refresh();
-                }
-            }
-        }
-
+        #region DataGridView Event Handlers
         private void excelDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.ColumnIndex == excelDataGridView.Columns["Links"].Index) //Handling of HyperLink Click
@@ -175,16 +186,95 @@ namespace utility_workbench
 
             if (excelDataGridView.Columns[e.ColumnIndex].Name.Equals("Links"))
             {
-                if(e.Value != null)
-                    e.Value = Path.GetFileName(e.Value.ToString()); //change the display name for Hyperlink
+                if (e.Value != null)
+                {
+                    string fullPathofFile = e.Value.ToString();
+                    e.Value = Path.GetFileName(fullPathofFile); //change the display name for Hyperlink
+                    DataGridViewCell thisCell = excelDataGridView[e.ColumnIndex, e.RowIndex];
+                    thisCell.ToolTipText = fullPathofFile;
+                   
+                }
             }
         }
 
+        #endregion
+
+        #region Implementation of Search Text Box
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
             DataView dataView = (excelDataGridView.DataSource as DataView);
             string newStr = string.Format("[Part Name] LIKE '%{0}%'", searchTextBox.Text);
             dataView.RowFilter = newStr;
         }
+        #endregion
+
+        #region Execution of Process
+
+        BackgroundWorker bwThread = null;
+        private void excuteButton_Click(object sender, EventArgs e)
+        {
+            DataGridViewRowCollection rows = excelDataGridView.Rows;
+
+            bwThread.RunWorkerAsync(rows);
+
+        }
+
+        private void heavyTaskCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+
+        }
+
+        private void progressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            //MessageBox.Show(e.ProgressPercentage.ToString());
+
+            DataGridViewRow row = e.UserState as DataGridViewRow;
+
+            string fileName = row.Cells["Part Name"].Value.ToString() + ".txt";
+            string[] files = Directory.GetFiles(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\dump", fileName);
+            if (files.Length > 0)
+            {
+                row.Cells["Links"].Value = files[0];
+                row.Cells["Status"].Value = "Completed";
+                excelDataGridView.Update();
+                excelDataGridView.Refresh();
+            }
+        }
+
+        private void processHeavyTask(object sender, DoWorkEventArgs e)
+        {
+            DataGridViewRowCollection rows = e.Argument as DataGridViewRowCollection;
+
+            foreach (DataGridViewRow row in rows)
+            {
+                row.Selected = true;
+                row.Cells["Status"].Value = "In Progress...";
+
+                string partName = row.Cells["Part Name"].Value.ToString();
+                string process = row.Cells["Process"].Value.ToString();
+                string quantity = row.Cells["Quantity"].Value.ToString();
+                string plant = row.Cells["Plant"].Value.ToString();
+                string materialFamily = row.Cells["Material Family"].Value.ToString();
+                string materialGrade = row.Cells["Material Grade"].Value.ToString();
+
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
+                while (stopWatch.Elapsed < TimeSpan.FromSeconds(5))
+                {
+                }
+                stopWatch.Stop();
+
+                string fileName = partName + ".txt";
+                string[] lines = { partName, process, quantity, plant, materialFamily, materialGrade };
+                File.WriteAllLines(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\dump\" + fileName, lines);
+
+                int percentageCompleted = (int)((((float)row.Index + 1) / rows.Count) * 100);
+                bwThread.ReportProgress(percentageCompleted, row);
+
+                //MessageBox.Show(percentageCompleted.ToString());
+            }
+        }
+
+        #endregion
     }
 }

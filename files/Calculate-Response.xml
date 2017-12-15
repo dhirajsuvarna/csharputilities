@@ -1,0 +1,1760 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Costimator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="file:///Costimator14.xsd">
+  <Request type="Part">
+    <Criteria>Calculate</Criteria>
+  </Request>
+  <Parts>
+    <Part PartNumber="mill-5.prt.1_dhirajs" Version="0">
+      <ModelFile>
+      </ModelFile>
+      <Plant>United States</Plant>
+      <Quantity>10000</Quantity>
+      <PartType>Mill</PartType>
+      <Template>HCL Template</Template>
+      <PartUnit>M</PartUnit>
+      <SetupTime>27180.000</SetupTime>
+      <SetupTimePiece>2.718</SetupTimePiece>
+      <SetupCost>428.547</SetupCost>
+      <SetupCostPiece>0.043</SetupCostPiece>
+      <LaborTime>32159823.000</LaborTime>
+      <LaborTimePiece>3215.982</LaborTimePiece>
+      <LaborCost>209632.034</LaborCost>
+      <LaborCostPiece>20.963</LaborCostPiece>
+      <BurdenCost>332295.767</BurdenCost>
+      <BurdenCostPiece>33.230</BurdenCostPiece>
+      <ManufacturingTime>18602020.000</ManufacturingTime>
+      <ManufacturingTimePiece>1860.202</ManufacturingTimePiece>
+      <ManufacturingCost>119001.256</ManufacturingCost>
+      <ManufacturingCostPiece>11.900</ManufacturingCostPiece>
+      <StandardTime>8750000.000</StandardTime>
+      <StandardTimePiece>875.000</StandardTimePiece>
+      <StandardCost>59365.694</StandardCost>
+      <StandardCostPiece>5.937</StandardCostPiece>
+      <AllowanceTime>4167803.000</AllowanceTime>
+      <AllowanceTimePiece>416.780</AllowanceTimePiece>
+      <AllowanceCost>27170.862</AllowanceCost>
+      <AllowanceCostPiece>2.717</AllowanceCostPiece>
+      <MaterialCost>267885.050</MaterialCost>
+      <MaterialCostPiece>26.789</MaterialCostPiece>
+      <ToolCount>24.000</ToolCount>
+      <ToolChangeTime>640000.000</ToolChangeTime>
+      <ToolChangeTimePiece>64.000</ToolChangeTimePiece>
+      <ToolChangeCost>4094.222</ToolChangeCost>
+      <ToolChangeCostPiece>0.409</ToolChangeCostPiece>
+      <TotalTime>32187003.000</TotalTime>
+      <TotalTimePiece>3218.700</TotalTimePiece>
+      <TotalCost>810241.398</TotalCost>
+      <TotalCostPiece>81.024</TotalCostPiece>
+      <PartMaterial>
+        <MaterialClass>Stainless Steel</MaterialClass>
+        <Material>321</Material>
+        <StockShape>Rectangle Bar</StockShape>
+        <PartLength>76.877</PartLength>
+        <StockLength>81877</StockLength>
+        <PartWidth>76.877</PartWidth>
+        <PartThickness>28.829</PartThickness>
+        <StockWidth>81.877</StockWidth>
+        <StockThickness>33.829</StockThickness>
+      </PartMaterial>
+      <Operations>
+        <Operation Number="10">
+          <WorkCenterNumber>Saw</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Saw part to size</Description>
+          <SetupTime>5400.000</SetupTime>
+          <SetupTimePiece>0.540</SetupTimePiece>
+          <SetupCost>68.224</SetupCost>
+          <SetupCostPiece>0.007</SetupCostPiece>
+          <LaborTime>937434.000</LaborTime>
+          <LaborTimePiece>93.743</LaborTimePiece>
+          <LaborCost>5996.974</LaborCost>
+          <LaborCostPiece>0.600</LaborCostPiece>
+          <BurdenCost>5846.663</BurdenCost>
+          <BurdenCostPiece>0.585</BurdenCostPiece>
+          <ManufacturingTime>515160.000</ManufacturingTime>
+          <ManufacturingTimePiece>51.516</ManufacturingTimePiece>
+          <ManufacturingCost>3295.593</ManufacturingCost>
+          <ManufacturingCostPiece>0.330</ManufacturingCostPiece>
+          <StandardTime>300000.000</StandardTime>
+          <StandardTimePiece>30.000</StandardTimePiece>
+          <StandardCost>1919.167</StandardCost>
+          <StandardCostPiece>0.192</StandardCostPiece>
+          <AllowanceTime>122274.000</AllowanceTime>
+          <AllowanceTimePiece>12.227</AllowanceTimePiece>
+          <AllowanceCost>782.214</AllowanceCost>
+          <AllowanceCostPiece>0.078</AllowanceCostPiece>
+          <ToolCount>1.000</ToolCount>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>2151.723</BurdenCost>
+              <BurdenCostPiece>0.215</BurdenCostPiece>
+              <StandardTime>300000.000</StandardTime>
+              <StandardTimePiece>30.000</StandardTimePiece>
+              <StandardCost>1919.167</StandardCost>
+              <StandardCostPiece>0.192</StandardCostPiece>
+              <AllowanceTime>45000.000</AllowanceTime>
+              <AllowanceTimePiece>4.500</AllowanceTimePiece>
+              <AllowanceCost>287.875</AllowanceCost>
+              <AllowanceCostPiece>0.029</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Saw, Band - Cut From Plate</DetailName>
+              <Description>Band Saw Cutting</Description>
+              <BurdenCost>3694.939</BurdenCost>
+              <BurdenCostPiece>0.369</BurdenCostPiece>
+              <ManufacturingTime>515160.000</ManufacturingTime>
+              <ManufacturingTimePiece>51.516</ManufacturingTimePiece>
+              <ManufacturingCost>3295.593</ManufacturingCost>
+              <ManufacturingCostPiece>0.330</ManufacturingCostPiece>
+              <AllowanceTime>77274.000</AllowanceTime>
+              <AllowanceTimePiece>7.727</AllowanceTimePiece>
+              <AllowanceCost>494.339</AllowanceCost>
+              <AllowanceCostPiece>0.049</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="PltThk" Formula="" UnitMeasure="7" OutputValue="33.833" />
+                <Variable name="PcWdth" Formula="" UnitMeasure="7" OutputValue="81.864" />
+                <Variable name="PcLgth" Formula="" UnitMeasure="7" OutputValue="81876.824" />
+                <Variable name="Crossect" Formula="PcWdth*PltThk" UnitMeasure="9" OutputValue="2769.69510576" />
+                <Variable name="MatDensity" Formula="StockDensity()" UnitMeasure="18" OutputValue="7.834054141696" />
+                <Variable name="CutTime" Formula="IIF( MatDensity &lt;0.110  , 0.09 , 0 ) + IIF( MatDensity &gt;= 0.110 And MatDensity &lt;0.165  , 1.25 , 0 ) + IIF( MatDensity &gt;= 0.165 And MatDensity &lt; 0.284  , 0.2 , 0 ) + IIF( MatDensity &gt;= 0.284 And MatDensity &lt; 0.29  , 0.60 , 0 ) + IIF( MatDensity &gt;=0.290 And MatDensity &lt;0.297 , 0.666 , 0 ) + IIF( MatDensity &gt;=.297 And MatDensity &lt;0.301  , 0.833 , 0 ) + IIF( MatDensity &gt;= 0.301 And MatDensity &lt;0.310  , 0.33 , 0 ) + IIF( MatDensity &gt;= 0.310  , 1.428 , 0 )" UnitMeasure="0" OutputValue="0.2" />
+              </Variables>
+              <Features>
+                <Feature name="PreProcess">
+                  <FeatureVariables />
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="20">
+          <WorkCenterNumber>CNC Mach Ctr</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>CNC milling and drilling of parts.....</Description>
+          <SetupTime>3600.000</SetupTime>
+          <SetupTimePiece>0.360</SetupTimePiece>
+          <SetupCost>62.626</SetupCost>
+          <SetupCostPiece>0.006</SetupCostPiece>
+          <LaborTime>9850986.500</LaborTime>
+          <LaborTimePiece>985.099</LaborTimePiece>
+          <LaborCost>63018.950</LaborCost>
+          <LaborCostPiece>6.302</LaborCostPiece>
+          <BurdenCost>108348.872</BurdenCost>
+          <BurdenCostPiece>10.835</BurdenCostPiece>
+          <ManufacturingTime>7296510.000</ManufacturingTime>
+          <ManufacturingTimePiece>729.651</ManufacturingTimePiece>
+          <ManufacturingCost>46677.396</ManufacturingCost>
+          <ManufacturingCostPiece>4.668</ManufacturingCostPiece>
+          <StandardTime>1200000.000</StandardTime>
+          <StandardTimePiece>120.000</StandardTimePiece>
+          <StandardCost>7676.667</StandardCost>
+          <StandardCostPiece>0.768</StandardCostPiece>
+          <AllowanceTime>1274476.500</AllowanceTime>
+          <AllowanceTimePiece>127.448</AllowanceTimePiece>
+          <AllowanceCost>8153.109</AllowanceCost>
+          <AllowanceCostPiece>0.815</AllowanceCostPiece>
+          <ToolCount>1.000</ToolCount>
+          <ToolChangeTime>80000.000</ToolChangeTime>
+          <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+          <ToolChangeCost>511.778</ToolChangeCost>
+          <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>15178.322</BurdenCost>
+              <BurdenCostPiece>1.518</BurdenCostPiece>
+              <StandardTime>1200000.000</StandardTime>
+              <StandardTimePiece>120.000</StandardTimePiece>
+              <StandardCost>7676.667</StandardCost>
+              <StandardCostPiece>0.768</StandardCostPiece>
+              <AllowanceTime>180000.000</AllowanceTime>
+              <AllowanceTimePiece>18.000</AllowanceTimePiece>
+              <AllowanceCost>1151.500</AllowanceCost>
+              <AllowanceCostPiece>0.115</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Surfacework, Perimeter</DetailName>
+              <Description>Feature: Peripheral Milling stock materials</Description>
+              <BurdenCost>93170.550</BurdenCost>
+              <BurdenCostPiece>9.317</BurdenCostPiece>
+              <ManufacturingTime>7296510.000</ManufacturingTime>
+              <ManufacturingTimePiece>729.651</ManufacturingTimePiece>
+              <ManufacturingCost>46677.396</ManufacturingCost>
+              <ManufacturingCostPiece>4.668</ManufacturingCostPiece>
+              <AllowanceTime>1094476.500</AllowanceTime>
+              <AllowanceTimePiece>109.448</AllowanceTimePiece>
+              <AllowanceCost>7001.609</AllowanceCost>
+              <AllowanceCostPiece>0.700</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="periphery" Formula="" UnitMeasure="7" OutputValue="304.8" />
+                <Variable name="Thkness" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="ToolDia1" Formula="Round( Thkness  , 1 , 0 )" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="ToolDia" Formula="IIF( Thkness&lt;=3  , ToolDia1  , 0 )+IIF( Thkness&gt;3 And Thkness &lt;8 , 4 , 0 )+IIF( Thkness &gt;=8 , 6 , 0 )" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="DOC" Formula="" UnitMeasure="7" OutputValue="6.35" />
+                <Variable name="NumDepthPasses" Formula="Thkness/DOC" UnitMeasure="0" OutputValue="4.5" />
+                <Variable name="NumDepthPassRound" Formula="Round( NumDepthPasses  , 1 , 0 )" UnitMeasure="0" OutputValue="5" />
+                <Variable name="rghnfin" Formula="Mill_Endmill_Peripheral( 1 , 2 , Thkness, .250 , ToolDia , periphery  , 2 )" UnitMeasure="23" OutputValue="12.1608438293729" />
+                <Variable name="Rough2" Formula="Mill_Facemill_Positive_Insert( 1 , 2 , .015 , Thkness  , ToolDia  , periphery+ToolDia  , NumDepthPassRound  )" UnitMeasure="23" OutputValue="5.20759199704179" />
+                <Variable name="finishpass2" Formula="Mill_Facemill_Positive_Insert( 0 , 2 , .015 , Thkness  , ToolDia  , periphery  , 1 )" UnitMeasure="23" OutputValue="0.892730056635735" />
+                <Variable name="Time" Formula="IIF( Thkness &lt;=3 , rghnfin , Rough2+finishpass2 )" UnitMeasure="23" OutputValue="12.1608438293729" />
+              </Variables>
+              <Features>
+                <Feature name="SIDE WALL 1">
+                  <FeatureVariables>
+                    <Variable name="Area" value="5806.440" />
+                    <Variable name="Depth" value="28.575" />
+                    <Variable name="FaceIds" value="551,578,556,550" />
+                    <Variable name="Length" value="304.800" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="30">
+          <WorkCenterNumber>CNC Mach Ctr</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>CNC milling and drilling of parts.....</Description>
+          <SetupID>1</SetupID>
+          <SetupTime>3600.000</SetupTime>
+          <SetupTimePiece>0.360</SetupTimePiece>
+          <SetupCost>62.626</SetupCost>
+          <SetupCostPiece>0.006</SetupCostPiece>
+          <LaborTime>1517845.000</LaborTime>
+          <LaborTimePiece>151.785</LaborTimePiece>
+          <LaborCost>9709.992</LaborCost>
+          <LaborCostPiece>0.971</LaborCostPiece>
+          <BurdenCost>16694.449</BurdenCost>
+          <BurdenCostPiece>1.669</BurdenCostPiece>
+          <ManufacturingTime>50300.000</ManufacturingTime>
+          <ManufacturingTimePiece>5.030</ManufacturingTimePiece>
+          <ManufacturingCost>321.780</ManufacturingCost>
+          <ManufacturingCostPiece>0.032</ManufacturingCostPiece>
+          <StandardTime>1200000.000</StandardTime>
+          <StandardTimePiece>120.000</StandardTimePiece>
+          <StandardCost>7676.667</StandardCost>
+          <StandardCostPiece>0.768</StandardCostPiece>
+          <AllowanceTime>187545.000</AllowanceTime>
+          <AllowanceTimePiece>18.755</AllowanceTimePiece>
+          <AllowanceCost>1199.767</AllowanceCost>
+          <AllowanceCostPiece>0.120</AllowanceCostPiece>
+          <ToolCount>1.000</ToolCount>
+          <ToolChangeTime>80000.000</ToolChangeTime>
+          <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+          <ToolChangeCost>511.778</ToolChangeCost>
+          <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>15178.322</BurdenCost>
+              <BurdenCostPiece>1.518</BurdenCostPiece>
+              <StandardTime>1200000.000</StandardTime>
+              <StandardTimePiece>120.000</StandardTimePiece>
+              <StandardCost>7676.667</StandardCost>
+              <StandardCostPiece>0.768</StandardCostPiece>
+              <AllowanceTime>180000.000</AllowanceTime>
+              <AllowanceTimePiece>18.000</AllowanceTimePiece>
+              <AllowanceCost>1151.500</AllowanceCost>
+              <AllowanceCostPiece>0.115</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Surfacework, Faces</DetailName>
+              <Description>Input Depth, Width &amp; Length of Cut</Description>
+              <BurdenCost>1516.127</BurdenCost>
+              <BurdenCostPiece>0.152</BurdenCostPiece>
+              <ManufacturingTime>50300.000</ManufacturingTime>
+              <ManufacturingTimePiece>5.030</ManufacturingTimePiece>
+              <ManufacturingCost>321.780</ManufacturingCost>
+              <ManufacturingCostPiece>0.032</ManufacturingCostPiece>
+              <AllowanceTime>7545.000</AllowanceTime>
+              <AllowanceTimePiece>0.755</AllowanceTimePiece>
+              <AllowanceCost>48.267</AllowanceCost>
+              <AllowanceCostPiece>0.005</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="WidthCut" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Wdth1" Formula="IIF( WidthCut  &lt;= 1.9   , 1, 0 )" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="Wdth2" Formula="IIF( WidthCut   &gt; 1.9 And WidthCut  &lt;= 3.9  , 3 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="Wdth3" Formula="IIF( WidthCut  &gt;3.9 And WidthCut  &lt;= 10 , 4 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="Wdth4" Formula="IIF( WidthCut &gt;10 , 6 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="ToolDia" Formula="Wdth1+Wdth2+Wdth3+Wdth4" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="LgtCut" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="MatDensity" Formula="StockDensity()" UnitMeasure="11" OutputValue="0.007834054141696" />
+                <Variable name="DOC" Formula="IIF( MatDensity &lt;0.110  , 0.200 , 0 ) + IIF( MatDensity &gt;= 0.110 And MatDensity &lt;0.165  , 0.060 , 0 ) + IIF( MatDensity &gt;= 0.165 And MatDensity &lt; 0.284  , 0.100 , 0 ) + IIF( MatDensity &gt;= 0.284 And MatDensity &lt; 0.29  , 0.100 , 0 ) + IIF( MatDensity &gt;=0.290 And MatDensity &lt;0.297 , 0.060 , 0 ) + IIF( MatDensity &gt;=.297 And MatDensity &lt;0.300  , 0.100 , 0 ) + IIF( MatDensity &gt;= 0.301 And MatDensity &lt;0.310  , 0.200 , 0 ) + IIF( MatDensity &gt;= 0.310  , 0.060 , 0 )" UnitMeasure="7" OutputValue="2.54" />
+                <Variable name="NumDepthPasses" Formula="Dpth/DOC" UnitMeasure="0" OutputValue="0" />
+                <Variable name="NumDepthPassRound" Formula="Round( NumDepthPasses  , 1 , 0 )" UnitMeasure="0" OutputValue="1" />
+                <Variable name="RghCutTime" Formula="Mill_Facemill_Positive_Insert( 1 , 2 , .005  ,  WidthCut  , ToolDia  , LgtCut+ToolDia  , NumDepthPassRound   )" UnitMeasure="23" OutputValue="0.0838381634552243" />
+                <Variable name="NumSurf" Formula="" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="FACE FEATURE 1">
+                  <FeatureVariables>
+                    <Variable name="Area" value="10.409" />
+                    <Variable name="Arrow" value="0.005,-0.003,2.559,0.005,-0.000,1.227" />
+                    <Variable name="Axis_x" value="-0.000" />
+                    <Variable name="Axis_y" value="0.002" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="Box" value="-1.612,-1.615,1.228,-1.606,1.611,1.228,1.615,-1.612,1.225,-1.612,-1.615,1.228,1.621,1.615,1.225,1.615,-1.612,1.225,-1.606,1.611,1.228,1.621,1.615,1.225" />
+                    <Variable name="Depth" value="0.000" />
+                    <Variable name="Length" value="3.226" />
+                    <Variable name="SetupID" value="1" />
+                    <Variable name="Width" value="3.226" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="40">
+          <WorkCenterNumber>CNC Mach Ctr</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>CNC milling and drilling of parts.....</Description>
+          <SetupID>2</SetupID>
+          <SetupTime>3600.000</SetupTime>
+          <SetupTimePiece>0.360</SetupTimePiece>
+          <SetupCost>62.626</SetupCost>
+          <SetupCostPiece>0.006</SetupCostPiece>
+          <LaborTime>13526445.000</LaborTime>
+          <LaborTimePiece>1352.645</LaborTimePiece>
+          <LaborCost>86531.675</LaborCost>
+          <LaborCostPiece>8.653</LaborCostPiece>
+          <BurdenCost>148774.445</BurdenCost>
+          <BurdenCostPiece>14.877</BurdenCostPiece>
+          <ManufacturingTime>10214300.000</ManufacturingTime>
+          <ManufacturingTimePiece>1021.430</ManufacturingTimePiece>
+          <ManufacturingCost>65343.147</ManufacturingCost>
+          <ManufacturingCostPiece>6.534</ManufacturingCostPiece>
+          <StandardTime>1200000.000</StandardTime>
+          <StandardTimePiece>120.000</StandardTimePiece>
+          <StandardCost>7676.667</StandardCost>
+          <StandardCostPiece>0.768</StandardCostPiece>
+          <AllowanceTime>1712145.000</AllowanceTime>
+          <AllowanceTimePiece>171.215</AllowanceTimePiece>
+          <AllowanceCost>10952.972</AllowanceCost>
+          <AllowanceCostPiece>1.095</AllowanceCostPiece>
+          <ToolCount>5.000</ToolCount>
+          <ToolChangeTime>400000.000</ToolChangeTime>
+          <ToolChangeTimePiece>40.000</ToolChangeTimePiece>
+          <ToolChangeCost>2558.889</ToolChangeCost>
+          <ToolChangeCostPiece>0.256</ToolChangeCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>15178.322</BurdenCost>
+              <BurdenCostPiece>1.518</BurdenCostPiece>
+              <StandardTime>1200000.000</StandardTime>
+              <StandardTimePiece>120.000</StandardTimePiece>
+              <StandardCost>7676.667</StandardCost>
+              <StandardCostPiece>0.768</StandardCostPiece>
+              <AllowanceTime>180000.000</AllowanceTime>
+              <AllowanceTimePiece>18.000</AllowanceTimePiece>
+              <AllowanceCost>1151.500</AllowanceCost>
+              <AllowanceCostPiece>0.115</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Holes, Counterbore + Hole</DetailName>
+              <Description>Feature: Input Dia''s, Depth and Quantity</Description>
+              <BurdenCost>6554.192</BurdenCost>
+              <BurdenCostPiece>0.655</BurdenCostPiece>
+              <ManufacturingTime>448610.000</ManufacturingTime>
+              <ManufacturingTimePiece>44.861</ManufacturingTimePiece>
+              <ManufacturingCost>2869.858</ManufacturingCost>
+              <ManufacturingCostPiece>0.287</ManufacturingCostPiece>
+              <AllowanceTime>67291.500</AllowanceTime>
+              <AllowanceTimePiece>6.729</AllowanceTimePiece>
+              <AllowanceCost>430.479</AllowanceCost>
+              <AllowanceCostPiece>0.043</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="CborDia" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="CborDpth" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHol" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Spot" Formula="Dia * 1.1" UnitMeasure="7" OutputValue="5.22478" />
+                <Variable name="SpotDrTime" Formula="Drill_Spot( 2 , Spot  , .2 , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.0259669427135132" />
+                <Variable name="DrTime" Formula="Drill_Drill( 1 , Dia  , Dpth  , NumHol  , 1 , 1 )" UnitMeasure="23" OutputValue="0.513225416667264" />
+                <Variable name="CborTime" Formula="Drill_Counterbore( 2 , CborDia  , CborDpth  , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.20849119080852" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="542,548,546,571,570" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>3</DetailNumber>
+              <DetailName>Holes, Counterbore + Hole</DetailName>
+              <Description>Feature: Input Dia''s, Depth and Quantity</Description>
+              <BurdenCost>6554.192</BurdenCost>
+              <BurdenCostPiece>0.655</BurdenCostPiece>
+              <ManufacturingTime>448610.000</ManufacturingTime>
+              <ManufacturingTimePiece>44.861</ManufacturingTimePiece>
+              <ManufacturingCost>2869.858</ManufacturingCost>
+              <ManufacturingCostPiece>0.287</ManufacturingCostPiece>
+              <AllowanceTime>67291.500</AllowanceTime>
+              <AllowanceTimePiece>6.729</AllowanceTimePiece>
+              <AllowanceCost>430.479</AllowanceCost>
+              <AllowanceCostPiece>0.043</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="CborDia" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="CborDpth" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHol" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Spot" Formula="Dia * 1.1" UnitMeasure="7" OutputValue="5.22478" />
+                <Variable name="SpotDrTime" Formula="Drill_Spot( 2 , Spot  , .2 , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.0259669427135132" />
+                <Variable name="DrTime" Formula="Drill_Drill( 1 , Dia  , Dpth  , NumHol  , 1 , 1 )" UnitMeasure="23" OutputValue="0.513225416667264" />
+                <Variable name="CborTime" Formula="Drill_Counterbore( 2 , CborDia  , CborDpth  , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.20849119080852" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 2">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="545,590,566,568,588" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>4</DetailNumber>
+              <DetailName>Holes, Counterbore + Hole</DetailName>
+              <Description>Feature: Input Dia''s, Depth and Quantity</Description>
+              <BurdenCost>6554.192</BurdenCost>
+              <BurdenCostPiece>0.655</BurdenCostPiece>
+              <ManufacturingTime>448610.000</ManufacturingTime>
+              <ManufacturingTimePiece>44.861</ManufacturingTimePiece>
+              <ManufacturingCost>2869.858</ManufacturingCost>
+              <ManufacturingCostPiece>0.287</ManufacturingCostPiece>
+              <AllowanceTime>67291.500</AllowanceTime>
+              <AllowanceTimePiece>6.729</AllowanceTimePiece>
+              <AllowanceCost>430.479</AllowanceCost>
+              <AllowanceCostPiece>0.043</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="CborDia" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="CborDpth" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHol" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Spot" Formula="Dia * 1.1" UnitMeasure="7" OutputValue="5.22478" />
+                <Variable name="SpotDrTime" Formula="Drill_Spot( 2 , Spot  , .2 , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.0259669427135132" />
+                <Variable name="DrTime" Formula="Drill_Drill( 1 , Dia  , Dpth  , NumHol  , 1 , 1 )" UnitMeasure="23" OutputValue="0.513225416667264" />
+                <Variable name="CborTime" Formula="Drill_Counterbore( 2 , CborDia  , CborDpth  , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.20849119080852" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 3">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="547,549,544,560,589" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>5</DetailNumber>
+              <DetailName>Holes, Counterbore + Hole</DetailName>
+              <Description>Feature: Input Dia''s, Depth and Quantity</Description>
+              <BurdenCost>6554.192</BurdenCost>
+              <BurdenCostPiece>0.655</BurdenCostPiece>
+              <ManufacturingTime>448610.000</ManufacturingTime>
+              <ManufacturingTimePiece>44.861</ManufacturingTimePiece>
+              <ManufacturingCost>2869.858</ManufacturingCost>
+              <ManufacturingCostPiece>0.287</ManufacturingCostPiece>
+              <AllowanceTime>67291.500</AllowanceTime>
+              <AllowanceTimePiece>6.729</AllowanceTimePiece>
+              <AllowanceCost>430.479</AllowanceCost>
+              <AllowanceCostPiece>0.043</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="CborDia" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="CborDpth" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHol" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Spot" Formula="Dia * 1.1" UnitMeasure="7" OutputValue="5.22478" />
+                <Variable name="SpotDrTime" Formula="Drill_Spot( 2 , Spot  , .2 , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.0259669427135132" />
+                <Variable name="DrTime" Formula="Drill_Drill( 1 , Dia  , Dpth  , NumHol  , 1 , 1 )" UnitMeasure="23" OutputValue="0.513225416667264" />
+                <Variable name="CborTime" Formula="Drill_Counterbore( 2 , CborDia  , CborDpth  , NumHol  , 1 )" UnitMeasure="23" OutputValue="0.20849119080852" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 4">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="565,591,567,569,554" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>6</DetailNumber>
+              <DetailName>Surfacework, Pockets</DetailName>
+              <Description>Feature: Min Wall .015 Input Area, Dpth, Periph</Description>
+              <BurdenCost>107379.356</BurdenCost>
+              <BurdenCostPiece>10.738</BurdenCostPiece>
+              <ManufacturingTime>8419860.000</ManufacturingTime>
+              <ManufacturingTimePiece>841.986</ManufacturingTimePiece>
+              <ManufacturingCost>53863.716</ManufacturingCost>
+              <ManufacturingCostPiece>5.386</ManufacturingCostPiece>
+              <AllowanceTime>1262979.000</AllowanceTime>
+              <AllowanceTimePiece>126.298</AllowanceTimePiece>
+              <AllowanceCost>8079.557</AllowanceCost>
+              <AllowanceCostPiece>0.808</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Lngth" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="Area" Formula="Lngth*Width" UnitMeasure="9" OutputValue="2580.64" />
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="Peripheral" Formula="" UnitMeasure="7" OutputValue="192.303" />
+                <Variable name="BotRadius" Formula="" UnitMeasure="7" OutputValue="6.35" />
+                <Variable name="RghToolDia1" Formula="IIF( Width &lt; .35, Width/2 , 0)" UnitMeasure="7" OutputValue="0" />
+                <Variable name="RghToolDia2" Formula="IIF( Width &gt;=.35 And Width &lt;.75 , 0.25 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="RghToolDia3" Formula="IIF( Width &gt;=0.75 And Width &lt;2.0 , 0.5 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="RghToolDia4" Formula="IIF( Width &gt;=2.0 And Width &lt;4.0 , 1 , 0 )" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="RghToolDia5" Formula="IIF( Width &gt;=4.0 , 1.25 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="CalcToolDia" Formula="RghToolDia1+RghToolDia2+RghToolDia3+RghToolDia4+RghToolDia5" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="OverrideToolDia" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="ToolDia" Formula="IIF( OverrideToolDia &gt;0 , OverrideToolDia  , CalcToolDia  )" UnitMeasure="0" OutputValue="1" />
+                <Variable name="MillTimeRgh" Formula="Mill_PocketMill( 2 , Area  , Dpth   ,  ToolDia   , 1 ) " UnitMeasure="23" OutputValue="6.35289831036542" />
+                <Variable name="PeriphToolDia" Formula="IIF( BotRadius &gt;= .04 , BotRadius*2 , .125 )" UnitMeasure="7" OutputValue="12.7" />
+                <Variable name="MillTimePeriph" Formula="Mill_Endmill_Peripheral( 0 , 2 , .010 , Dpth , BotRadius*2  , Peripheral  , 1 )" UnitMeasure="23" OutputValue="1.70763582455707" />
+                <Variable name="MillTimeCrnr" Formula="Mill_Endmill_Corner_Round( 2 , BotRadius*2 , BotRadius*2* PI() , 4 )" UnitMeasure="23" OutputValue="5.97256381482921" />
+                <Variable name="Thinwallinput" Formula="" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="ThinWall187" Formula="IIF( Thinwallinput     &gt;.187  , 1 , 0 )" UnitMeasure="0" OutputValue="1" />
+                <Variable name="ThinWall090" Formula="IIF(Thinwallinput  &gt; .090 And  Thinwallinput  &lt;=.187 , 1.5 , 0 )" UnitMeasure="0" OutputValue="0" />
+                <Variable name="ThinWall060" Formula="IIF(  Thinwallinput   &lt;= .090 And Thinwallinput   &gt; .060   , 2 , 0 )" UnitMeasure="0" OutputValue="0" />
+                <Variable name="ThinWall030" Formula="IIF(  Thinwallinput   &lt;= .060  And Thinwallinput   &gt;  .030  , 2.5 , 0 )" UnitMeasure="0" OutputValue="0" />
+                <Variable name="ThinWall015" Formula="IIF(  Thinwallinput    &lt;= .030 And  Thinwallinput  &gt;= .015  , 5 , 0 )" UnitMeasure="0" OutputValue="0" />
+                <Variable name="ThinWallAllow" Formula="ThinWall187+ThinWall090+ThinWall060+ThinWall030+ThinWall015" UnitMeasure="0" OutputValue="1" />
+                <Variable name="MillTimePeriphFin" Formula="MillTimePeriph*ThinWallAllow" UnitMeasure="23" OutputValue="1.70763582455707" />
+                <Variable name="MillTimeCornerFin" Formula="IIF( BotRadius &lt;= .020 , 0 , MillTimeCrnr  )" UnitMeasure="23" OutputValue="5.97256381482921" />
+                <Variable name="Totcutime" Formula="MillTimeRgh+MillTimePeriphFin+MillTimeCornerFin" UnitMeasure="23" OutputValue="14.0330979497517" />
+                <Variable name="NumPockets" Formula="" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="POCKET 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="BottomArea" value="2545.801" />
+                    <Variable name="BottomBoundLength" value="50.800" />
+                    <Variable name="BottomBoundWidth" value="50.800" />
+                    <Variable name="BottomChannelWidth" value="0.000" />
+                    <Variable name="BottomMinCornerRadius" value="6.350" />
+                    <Variable name="BottomPerimeter" value="192.303" />
+                    <Variable name="BottomProfileCentroid_x" value="" />
+                    <Variable name="BottomProfileCentroid_y" value="" />
+                    <Variable name="BottomProfileCentroid_z" value="" />
+                    <Variable name="BottomShape" value="Rectangular" />
+                    <Variable name="EdgeIds" value="453,452,451,442,443,446,455,454" />
+                    <Variable name="EndType" value="1" />
+                    <Variable name="Extrusion" value="1" />
+                    <Variable name="FaceIds" value="553,563,564,559,561,575,579,576,574,573,541,543,572,581,582,583,585,586,584,580,577,558,555,562,557" />
+                    <Variable name="MaximumDepth" value="25.400" />
+                    <Variable name="NumOfSharpCorners" value="0" />
+                    <Variable name="SetupID" value="2" />
+                    <Variable name="TopArea" value="2545.801" />
+                    <Variable name="TopBoundLength" value="50.800" />
+                    <Variable name="TopBoundWidth" value="50.800" />
+                    <Variable name="TopChannelWidth" value="0.000" />
+                    <Variable name="TopEdge-EdgeMapCount" value="8" />
+                    <Variable name="TopEdge-FaceMapCount" value="8" />
+                    <Variable name="TopMinCornerRadius" value="6.350" />
+                    <Variable name="TopPerimeter" value="192.303" />
+                    <Variable name="TopProfileCentroid_x" value="" />
+                    <Variable name="TopProfileCentroid_y" value="" />
+                    <Variable name="TopProfileCentroid_z" value="" />
+                    <Variable name="TopShape" value="Rectangular" />
+                    <Variable name="TypeOfDraft" value="" />
+                    <Variable name="Uniform Draft" value="Uniform Draft" />
+                    <Variable name="Volume" value="64663.355" />
+                    <Variable name="VolumeType" value="1" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="50">
+          <WorkCenterNumber>CNC Mach Ctr</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>CNC milling and drilling of parts.....</Description>
+          <SetupID>3</SetupID>
+          <SetupTime>3600.000</SetupTime>
+          <SetupTimePiece>0.360</SetupTimePiece>
+          <SetupCost>62.626</SetupCost>
+          <SetupCostPiece>0.006</SetupCostPiece>
+          <LaborTime>1517845.000</LaborTime>
+          <LaborTimePiece>151.785</LaborTimePiece>
+          <LaborCost>9709.992</LaborCost>
+          <LaborCostPiece>0.971</LaborCostPiece>
+          <BurdenCost>16694.449</BurdenCost>
+          <BurdenCostPiece>1.669</BurdenCostPiece>
+          <ManufacturingTime>50300.000</ManufacturingTime>
+          <ManufacturingTimePiece>5.030</ManufacturingTimePiece>
+          <ManufacturingCost>321.780</ManufacturingCost>
+          <ManufacturingCostPiece>0.032</ManufacturingCostPiece>
+          <StandardTime>1200000.000</StandardTime>
+          <StandardTimePiece>120.000</StandardTimePiece>
+          <StandardCost>7676.667</StandardCost>
+          <StandardCostPiece>0.768</StandardCostPiece>
+          <AllowanceTime>187545.000</AllowanceTime>
+          <AllowanceTimePiece>18.755</AllowanceTimePiece>
+          <AllowanceCost>1199.767</AllowanceCost>
+          <AllowanceCostPiece>0.120</AllowanceCostPiece>
+          <ToolCount>1.000</ToolCount>
+          <ToolChangeTime>80000.000</ToolChangeTime>
+          <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+          <ToolChangeCost>511.778</ToolChangeCost>
+          <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>15178.322</BurdenCost>
+              <BurdenCostPiece>1.518</BurdenCostPiece>
+              <StandardTime>1200000.000</StandardTime>
+              <StandardTimePiece>120.000</StandardTimePiece>
+              <StandardCost>7676.667</StandardCost>
+              <StandardCostPiece>0.768</StandardCostPiece>
+              <AllowanceTime>180000.000</AllowanceTime>
+              <AllowanceTimePiece>18.000</AllowanceTimePiece>
+              <AllowanceCost>1151.500</AllowanceCost>
+              <AllowanceCostPiece>0.115</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Surfacework, Faces</DetailName>
+              <Description>Input Depth, Width &amp; Length of Cut</Description>
+              <BurdenCost>1516.127</BurdenCost>
+              <BurdenCostPiece>0.152</BurdenCostPiece>
+              <ManufacturingTime>50300.000</ManufacturingTime>
+              <ManufacturingTimePiece>5.030</ManufacturingTimePiece>
+              <ManufacturingCost>321.780</ManufacturingCost>
+              <ManufacturingCostPiece>0.032</ManufacturingCostPiece>
+              <AllowanceTime>7545.000</AllowanceTime>
+              <AllowanceTimePiece>0.755</AllowanceTimePiece>
+              <AllowanceCost>48.267</AllowanceCost>
+              <AllowanceCostPiece>0.005</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <ToolChangeTime>80000.000</ToolChangeTime>
+              <ToolChangeTimePiece>8.000</ToolChangeTimePiece>
+              <ToolChangeCost>511.778</ToolChangeCost>
+              <ToolChangeCostPiece>0.051</ToolChangeCostPiece>
+              <Variables>
+                <Variable name="Dpth" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="WidthCut" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Wdth1" Formula="IIF( WidthCut  &lt;= 1.9   , 1, 0 )" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="Wdth2" Formula="IIF( WidthCut   &gt; 1.9 And WidthCut  &lt;= 3.9  , 3 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="Wdth3" Formula="IIF( WidthCut  &gt;3.9 And WidthCut  &lt;= 10 , 4 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="Wdth4" Formula="IIF( WidthCut &gt;10 , 6 , 0 )" UnitMeasure="7" OutputValue="0" />
+                <Variable name="ToolDia" Formula="Wdth1+Wdth2+Wdth3+Wdth4" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="LgtCut" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="MatDensity" Formula="StockDensity()" UnitMeasure="11" OutputValue="0.007834054141696" />
+                <Variable name="DOC" Formula="IIF( MatDensity &lt;0.110  , 0.200 , 0 ) + IIF( MatDensity &gt;= 0.110 And MatDensity &lt;0.165  , 0.060 , 0 ) + IIF( MatDensity &gt;= 0.165 And MatDensity &lt; 0.284  , 0.100 , 0 ) + IIF( MatDensity &gt;= 0.284 And MatDensity &lt; 0.29  , 0.100 , 0 ) + IIF( MatDensity &gt;=0.290 And MatDensity &lt;0.297 , 0.060 , 0 ) + IIF( MatDensity &gt;=.297 And MatDensity &lt;0.300  , 0.100 , 0 ) + IIF( MatDensity &gt;= 0.301 And MatDensity &lt;0.310  , 0.200 , 0 ) + IIF( MatDensity &gt;= 0.310  , 0.060 , 0 )" UnitMeasure="7" OutputValue="2.54" />
+                <Variable name="NumDepthPasses" Formula="Dpth/DOC" UnitMeasure="0" OutputValue="0" />
+                <Variable name="NumDepthPassRound" Formula="Round( NumDepthPasses  , 1 , 0 )" UnitMeasure="0" OutputValue="1" />
+                <Variable name="RghCutTime" Formula="Mill_Facemill_Positive_Insert( 1 , 2 , .005  ,  WidthCut  , ToolDia  , LgtCut+ToolDia  , NumDepthPassRound   )" UnitMeasure="23" OutputValue="0.0838381634552243" />
+                <Variable name="NumSurf" Formula="" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="FACE FEATURE 2">
+                  <FeatureVariables>
+                    <Variable name="Area" value="10.409" />
+                    <Variable name="Arrow" value="0.004,0.006,-1.437,0.004,0.003,-0.105" />
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="-0.002" />
+                    <Variable name="Axis_z" value="1.000" />
+                    <Variable name="Box" value="-1.612,-1.612,-0.103,-1.606,1.615,-0.103,1.614,-1.609,-0.106,-1.612,-1.612,-0.103,1.620,1.618,-0.107,1.614,-1.609,-0.106,-1.606,1.615,-0.103,1.620,1.618,-0.107" />
+                    <Variable name="Depth" value="0.000" />
+                    <Variable name="Length" value="3.226" />
+                    <Variable name="SetupID" value="3" />
+                    <Variable name="Width" value="3.226" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="60">
+          <WorkCenterNumber>DeBurr</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Break all sharp edges. </Description>
+          <SetupID>2</SetupID>
+          <SetupTime>360.000</SetupTime>
+          <SetupTimePiece>0.036</SetupTimePiece>
+          <SetupCost>4.513</SetupCost>
+          <SetupCostPiece>0.000</SetupCostPiece>
+          <LaborTime>537786.000</LaborTime>
+          <LaborTimePiece>53.779</LaborTimePiece>
+          <LaborCost>3440.337</LaborCost>
+          <LaborCostPiece>0.344</LaborCostPiece>
+          <BurdenCost>3300.754</BurdenCost>
+          <BurdenCostPiece>0.330</BurdenCostPiece>
+          <ManufacturingTime>167640.000</ManufacturingTime>
+          <ManufacturingTimePiece>16.764</ManufacturingTimePiece>
+          <ManufacturingCost>1072.430</ManufacturingCost>
+          <ManufacturingCostPiece>0.107</ManufacturingCostPiece>
+          <StandardTime>300000.000</StandardTime>
+          <StandardTimePiece>30.000</StandardTimePiece>
+          <StandardCost>1919.167</StandardCost>
+          <StandardCostPiece>0.192</StandardCostPiece>
+          <AllowanceTime>70146.000</AllowanceTime>
+          <AllowanceTimePiece>7.015</AllowanceTimePiece>
+          <AllowanceCost>448.740</AllowanceCost>
+          <AllowanceCostPiece>0.045</AllowanceCostPiece>
+          <ToolCount>6.000</ToolCount>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>2117.497</BurdenCost>
+              <BurdenCostPiece>0.212</BurdenCostPiece>
+              <StandardTime>300000.000</StandardTime>
+              <StandardTimePiece>30.000</StandardTimePiece>
+              <StandardCost>1919.167</StandardCost>
+              <StandardCostPiece>0.192</StandardCostPiece>
+              <AllowanceTime>45000.000</AllowanceTime>
+              <AllowanceTimePiece>4.500</AllowanceTimePiece>
+              <AllowanceCost>287.875</AllowanceCost>
+              <AllowanceCostPiece>0.029</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Deburr, Hand, Edges</DetailName>
+              <Description>Hand Deburring of Edges</Description>
+              <BurdenCost>635.249</BurdenCost>
+              <BurdenCostPiece>0.064</BurdenCostPiece>
+              <ManufacturingTime>90000.000</ManufacturingTime>
+              <ManufacturingTimePiece>9.000</ManufacturingTimePiece>
+              <ManufacturingCost>575.750</ManufacturingCost>
+              <ManufacturingCostPiece>0.058</ManufacturingCostPiece>
+              <AllowanceTime>13500.000</AllowanceTime>
+              <AllowanceTimePiece>1.350</AllowanceTimePiece>
+              <AllowanceCost>86.363</AllowanceCost>
+              <AllowanceCostPiece>0.009</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="304.8" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width)*2" UnitMeasure="7" OutputValue="609.6" />
+                <Variable name="Dist1" Formula="IIF( Width ==0  , Length  , Dist  )" UnitMeasure="0" OutputValue="12" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="SIDE WALL 1">
+                  <FeatureVariables>
+                    <Variable name="Area" value="5806.440" />
+                    <Variable name="Depth" value="28.575" />
+                    <Variable name="FaceIds" value="551,578,556,550" />
+                    <Variable name="Length" value="304.800" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>3</DetailNumber>
+              <DetailName>Deburr, Hand, Holes</DetailName>
+              <Description>Hand Deburring of Holes</Description>
+              <BurdenCost>31.127</BurdenCost>
+              <BurdenCostPiece>0.003</BurdenCostPiece>
+              <ManufacturingTime>4410.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.441</ManufacturingTimePiece>
+              <ManufacturingCost>28.212</ManufacturingCost>
+              <ManufacturingCostPiece>0.003</ManufacturingCostPiece>
+              <AllowanceTime>661.500</AllowanceTime>
+              <AllowanceTimePiece>0.066</AllowanceTimePiece>
+              <AllowanceCost>4.232</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="NumHoles" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="HoleDia*PI()*NumHoles" UnitMeasure="7" OutputValue="14.9219367860208" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="542,548,546,571,570" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>4</DetailNumber>
+              <DetailName>Deburr, Hand, Holes</DetailName>
+              <Description>Hand Deburring of Holes</Description>
+              <BurdenCost>31.127</BurdenCost>
+              <BurdenCostPiece>0.003</BurdenCostPiece>
+              <ManufacturingTime>4410.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.441</ManufacturingTimePiece>
+              <ManufacturingCost>28.212</ManufacturingCost>
+              <ManufacturingCostPiece>0.003</ManufacturingCostPiece>
+              <AllowanceTime>661.500</AllowanceTime>
+              <AllowanceTimePiece>0.066</AllowanceTimePiece>
+              <AllowanceCost>4.232</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="NumHoles" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="HoleDia*PI()*NumHoles" UnitMeasure="7" OutputValue="14.9219367860208" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 2">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="545,590,566,568,588" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>5</DetailNumber>
+              <DetailName>Deburr, Hand, Holes</DetailName>
+              <Description>Hand Deburring of Holes</Description>
+              <BurdenCost>31.127</BurdenCost>
+              <BurdenCostPiece>0.003</BurdenCostPiece>
+              <ManufacturingTime>4410.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.441</ManufacturingTimePiece>
+              <ManufacturingCost>28.212</ManufacturingCost>
+              <ManufacturingCostPiece>0.003</ManufacturingCostPiece>
+              <AllowanceTime>661.500</AllowanceTime>
+              <AllowanceTimePiece>0.066</AllowanceTimePiece>
+              <AllowanceCost>4.232</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="NumHoles" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="HoleDia*PI()*NumHoles" UnitMeasure="7" OutputValue="14.9219367860208" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 3">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="547,549,544,560,589" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>6</DetailNumber>
+              <DetailName>Deburr, Hand, Holes</DetailName>
+              <Description>Hand Deburring of Holes</Description>
+              <BurdenCost>31.127</BurdenCost>
+              <BurdenCostPiece>0.003</BurdenCostPiece>
+              <ManufacturingTime>4410.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.441</ManufacturingTimePiece>
+              <ManufacturingCost>28.212</ManufacturingCost>
+              <ManufacturingCostPiece>0.003</ManufacturingCostPiece>
+              <AllowanceTime>661.500</AllowanceTime>
+              <AllowanceTimePiece>0.066</AllowanceTimePiece>
+              <AllowanceCost>4.232</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="NumHoles" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="HoleDia*PI()*NumHoles" UnitMeasure="7" OutputValue="14.9219367860208" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 4">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="565,591,567,569,554" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>7</DetailNumber>
+              <DetailName>Deburr, Hand, Edges</DetailName>
+              <Description>Hand Deburring of Edges</Description>
+              <BurdenCost>423.499</BurdenCost>
+              <BurdenCostPiece>0.042</BurdenCostPiece>
+              <ManufacturingTime>60000.000</ManufacturingTime>
+              <ManufacturingTimePiece>6.000</ManufacturingTimePiece>
+              <ManufacturingCost>383.833</ManufacturingCost>
+              <ManufacturingCostPiece>0.038</ManufacturingCostPiece>
+              <AllowanceTime>9000.000</AllowanceTime>
+              <AllowanceTimePiece>0.900</AllowanceTimePiece>
+              <AllowanceCost>57.575</AllowanceCost>
+              <AllowanceCostPiece>0.006</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width)*2" UnitMeasure="7" OutputValue="203.2" />
+                <Variable name="Dist1" Formula="IIF( Width ==0  , Length  , Dist  )" UnitMeasure="0" OutputValue="8" />
+                <Variable name="DeburrRate" Formula="" UnitMeasure="0" OutputValue="0.75" />
+              </Variables>
+              <Features>
+                <Feature name="POCKET 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="BottomArea" value="2545.801" />
+                    <Variable name="BottomBoundLength" value="50.800" />
+                    <Variable name="BottomBoundWidth" value="50.800" />
+                    <Variable name="BottomChannelWidth" value="0.000" />
+                    <Variable name="BottomMinCornerRadius" value="6.350" />
+                    <Variable name="BottomPerimeter" value="192.303" />
+                    <Variable name="BottomProfileCentroid_x" value="" />
+                    <Variable name="BottomProfileCentroid_y" value="" />
+                    <Variable name="BottomProfileCentroid_z" value="" />
+                    <Variable name="BottomShape" value="Rectangular" />
+                    <Variable name="EdgeIds" value="453,452,451,442,443,446,455,454" />
+                    <Variable name="EndType" value="1" />
+                    <Variable name="Extrusion" value="1" />
+                    <Variable name="FaceIds" value="553,563,564,559,561,575,579,576,574,573,541,543,572,581,582,583,585,586,584,580,577,558,555,562,557" />
+                    <Variable name="MaximumDepth" value="25.400" />
+                    <Variable name="NumOfSharpCorners" value="0" />
+                    <Variable name="SetupID" value="2" />
+                    <Variable name="TopArea" value="2545.801" />
+                    <Variable name="TopBoundLength" value="50.800" />
+                    <Variable name="TopBoundWidth" value="50.800" />
+                    <Variable name="TopChannelWidth" value="0.000" />
+                    <Variable name="TopEdge-EdgeMapCount" value="8" />
+                    <Variable name="TopEdge-FaceMapCount" value="8" />
+                    <Variable name="TopMinCornerRadius" value="6.350" />
+                    <Variable name="TopPerimeter" value="192.303" />
+                    <Variable name="TopProfileCentroid_x" value="" />
+                    <Variable name="TopProfileCentroid_y" value="" />
+                    <Variable name="TopProfileCentroid_z" value="" />
+                    <Variable name="TopShape" value="Rectangular" />
+                    <Variable name="TypeOfDraft" value="" />
+                    <Variable name="Uniform Draft" value="Uniform Draft" />
+                    <Variable name="Volume" value="64663.355" />
+                    <Variable name="VolumeType" value="1" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="70">
+          <WorkCenterNumber>Mark &amp; Identify</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Mark part per instructions</Description>
+          <SetupTime>1800.000</SetupTime>
+          <SetupTimePiece>0.180</SetupTimePiece>
+          <SetupCost>36.590</SetupCost>
+          <SetupCostPiece>0.004</SetupCostPiece>
+          <LaborTime>1035000.000</LaborTime>
+          <LaborTimePiece>103.500</LaborTimePiece>
+          <LaborCost>10519.625</LaborCost>
+          <LaborCostPiece>1.052</LaborCostPiece>
+          <BurdenCost>10519.625</BurdenCost>
+          <BurdenCostPiece>1.052</BurdenCostPiece>
+          <StandardTime>900000.000</StandardTime>
+          <StandardTimePiece>90.000</StandardTimePiece>
+          <StandardCost>9147.500</StandardCost>
+          <StandardCostPiece>0.915</StandardCostPiece>
+          <AllowanceTime>135000.000</AllowanceTime>
+          <AllowanceTimePiece>13.500</AllowanceTimePiece>
+          <AllowanceCost>1372.125</AllowanceCost>
+          <AllowanceCostPiece>0.137</AllowanceCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Mark Identification number of Part (Low Prod)</DetailName>
+              <Description>Mark Identification # on Part</Description>
+              <BurdenCost>10519.625</BurdenCost>
+              <BurdenCostPiece>1.052</BurdenCostPiece>
+              <StandardTime>900000.000</StandardTime>
+              <StandardTimePiece>90.000</StandardTimePiece>
+              <StandardCost>9147.500</StandardCost>
+              <StandardCostPiece>0.915</StandardCostPiece>
+              <AllowanceTime>135000.000</AllowanceTime>
+              <AllowanceTimePiece>13.500</AllowanceTimePiece>
+              <AllowanceCost>1372.125</AllowanceCost>
+              <AllowanceCostPiece>0.137</AllowanceCostPiece>
+              <Features />
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="80">
+          <WorkCenterNumber>Clean</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Clean parts  (Oil and grease).....</Description>
+          <SetupTime>1800.000</SetupTime>
+          <SetupTimePiece>0.180</SetupTimePiece>
+          <SetupCost>22.920</SetupCost>
+          <SetupCostPiece>0.002</SetupCostPiece>
+          <LaborTime>1560000.000</LaborTime>
+          <LaborTimePiece>156.000</LaborTimePiece>
+          <LaborCost>9979.667</LaborCost>
+          <LaborCostPiece>0.998</LaborCostPiece>
+          <BurdenCost>9884.293</BurdenCost>
+          <BurdenCostPiece>0.988</BurdenCostPiece>
+          <StandardTime>1300000.000</StandardTime>
+          <StandardTimePiece>130.000</StandardTimePiece>
+          <StandardCost>8316.389</StandardCost>
+          <StandardCostPiece>0.832</StandardCostPiece>
+          <AllowanceTime>260000.000</AllowanceTime>
+          <AllowanceTimePiece>26.000</AllowanceTimePiece>
+          <AllowanceCost>1663.278</AllowanceCost>
+          <AllowanceCostPiece>0.166</AllowanceCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Part, Clean via Solvent</DetailName>
+              <Description>Clean W/Solvent In Spray Booth</Description>
+              <BurdenCost>9884.293</BurdenCost>
+              <BurdenCostPiece>0.988</BurdenCostPiece>
+              <StandardTime>1300000.000</StandardTime>
+              <StandardTimePiece>130.000</StandardTimePiece>
+              <StandardCost>8316.389</StandardCost>
+              <StandardCostPiece>0.832</StandardCostPiece>
+              <AllowanceTime>260000.000</AllowanceTime>
+              <AllowanceTimePiece>26.000</AllowanceTimePiece>
+              <AllowanceCost>1663.278</AllowanceCost>
+              <AllowanceCostPiece>0.166</AllowanceCostPiece>
+              <Features />
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="90">
+          <WorkCenterNumber>Inspection, CMM</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Check part per instructions. </Description>
+          <SetupTime>1260.000</SetupTime>
+          <SetupTimePiece>0.126</SetupTimePiece>
+          <SetupCost>17.294</SetupCost>
+          <SetupCostPiece>0.002</SetupCostPiece>
+          <LaborTime>977500.000</LaborTime>
+          <LaborTimePiece>97.750</LaborTimePiece>
+          <LaborCost>6253.285</LaborCost>
+          <LaborCostPiece>0.625</LaborCostPiece>
+          <BurdenCost>7163.266</BurdenCost>
+          <BurdenCostPiece>0.716</BurdenCostPiece>
+          <StandardTime>850000.000</StandardTime>
+          <StandardTimePiece>85.000</StandardTimePiece>
+          <StandardCost>5437.639</StandardCost>
+          <StandardCostPiece>0.544</StandardCostPiece>
+          <AllowanceTime>127500.000</AllowanceTime>
+          <AllowanceTimePiece>12.750</AllowanceTimePiece>
+          <AllowanceCost>815.646</AllowanceCost>
+          <AllowanceCostPiece>0.082</AllowanceCostPiece>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Inspection, Check &amp; Record data</DetailName>
+              <Description>Check and record part data</Description>
+              <BurdenCost>2106.843</BurdenCost>
+              <BurdenCostPiece>0.211</BurdenCostPiece>
+              <StandardTime>250000.000</StandardTime>
+              <StandardTimePiece>25.000</StandardTimePiece>
+              <StandardCost>1599.306</StandardCost>
+              <StandardCostPiece>0.160</StandardCostPiece>
+              <AllowanceTime>37500.000</AllowanceTime>
+              <AllowanceTimePiece>3.750</AllowanceTimePiece>
+              <AllowanceCost>239.896</AllowanceCost>
+              <AllowanceCostPiece>0.024</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Standard">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Probe for Measurement</DetailName>
+              <Description>Probe for measurement</Description>
+              <BurdenCost>1685.474</BurdenCost>
+              <BurdenCostPiece>0.169</BurdenCostPiece>
+              <StandardTime>200000.000</StandardTime>
+              <StandardTimePiece>20.000</StandardTimePiece>
+              <StandardCost>1279.444</StandardCost>
+              <StandardCostPiece>0.128</StandardCostPiece>
+              <AllowanceTime>30000.000</AllowanceTime>
+              <AllowanceTimePiece>3.000</AllowanceTimePiece>
+              <AllowanceCost>191.917</AllowanceCost>
+              <AllowanceCostPiece>0.019</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Standard">
+              <DetailNumber>3</DetailNumber>
+              <DetailName>Probe to find Part</DetailName>
+              <Description>Probe for find part</Description>
+              <BurdenCost>3370.948</BurdenCost>
+              <BurdenCostPiece>0.337</BurdenCostPiece>
+              <StandardTime>400000.000</StandardTime>
+              <StandardTimePiece>40.000</StandardTimePiece>
+              <StandardCost>2558.889</StandardCost>
+              <StandardCostPiece>0.256</StandardCostPiece>
+              <AllowanceTime>60000.000</AllowanceTime>
+              <AllowanceTimePiece>6.000</AllowanceTimePiece>
+              <AllowanceCost>383.833</AllowanceCost>
+              <AllowanceCostPiece>0.038</AllowanceCostPiece>
+              <Features />
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="100">
+          <WorkCenterNumber>Packaging</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>Package parts</Description>
+          <SetupTime>900.000</SetupTime>
+          <SetupTimePiece>0.090</SetupTimePiece>
+          <SetupCost>11.210</SetupCost>
+          <SetupCostPiece>0.001</SetupCostPiece>
+          <LaborTime>41917.500</LaborTime>
+          <LaborTimePiece>4.192</LaborTimePiece>
+          <LaborCost>268.156</LaborCost>
+          <LaborCostPiece>0.027</LaborCostPiece>
+          <BurdenCost>253.949</BurdenCost>
+          <BurdenCostPiece>0.025</BurdenCostPiece>
+          <ManufacturingTime>36450.000</ManufacturingTime>
+          <ManufacturingTimePiece>3.645</ManufacturingTimePiece>
+          <ManufacturingCost>233.179</ManufacturingCost>
+          <ManufacturingCostPiece>0.023</ManufacturingCostPiece>
+          <AllowanceTime>5467.500</AllowanceTime>
+          <AllowanceTimePiece>0.547</AllowanceTimePiece>
+          <AllowanceCost>34.977</AllowanceCost>
+          <AllowanceCostPiece>0.003</AllowanceCostPiece>
+          <ToolCount>1.000</ToolCount>
+          <Details>
+            <Detail Type="Model">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Packaging</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>253.949</BurdenCost>
+              <BurdenCostPiece>0.025</BurdenCostPiece>
+              <ManufacturingTime>36450.000</ManufacturingTime>
+              <ManufacturingTimePiece>3.645</ManufacturingTimePiece>
+              <ManufacturingCost>233.179</ManufacturingCost>
+              <ManufacturingCostPiece>0.023</ManufacturingCostPiece>
+              <AllowanceTime>5467.500</AllowanceTime>
+              <AllowanceTimePiece>0.547</AllowanceTimePiece>
+              <AllowanceCost>34.977</AllowanceCost>
+              <AllowanceCostPiece>0.003</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="PartSize" Formula="" UnitMeasure="16" OutputValue="96814.75" />
+                <Variable name="PkgTime" Formula="IIF( PartSize &lt;= 17.28 , .06075 , 0 )+IIF( PartSize &gt;17.28 And PartSize &lt;= 1728 , .5025 , 0 )+IIF( PartSize &gt;1728 And PartSize &lt;= 43200 , 1.506 , 0 )+IIF( PartSize &gt;43200 And PartSize &lt;= 86400 , 2.4 , 0 )" UnitMeasure="23" OutputValue="0.06075" />
+              </Variables>
+              <Features>
+                <Feature name="PostProcess">
+                  <FeatureVariables />
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+        <Operation Number="110">
+          <WorkCenterNumber>Inspection - CMM</WorkCenterNumber>
+          <WorkCenterName>
+          </WorkCenterName>
+          <Description>CMM Inspection</Description>
+          <SetupID>1</SetupID>
+          <SetupTime>1260.000</SetupTime>
+          <SetupTimePiece>0.126</SetupTimePiece>
+          <SetupCost>17.294</SetupCost>
+          <SetupCostPiece>0.002</SetupCostPiece>
+          <LaborTime>657064.000</LaborTime>
+          <LaborTimePiece>65.706</LaborTimePiece>
+          <LaborCost>4203.384</LaborCost>
+          <LaborCostPiece>0.420</LaborCostPiece>
+          <BurdenCost>4815.001</BurdenCost>
+          <BurdenCostPiece>0.482</BurdenCostPiece>
+          <ManufacturingTime>271360.000</ManufacturingTime>
+          <ManufacturingTimePiece>27.136</ManufacturingTimePiece>
+          <ManufacturingCost>1735.950</ManufacturingCost>
+          <ManufacturingCostPiece>0.174</ManufacturingCostPiece>
+          <StandardTime>300000.000</StandardTime>
+          <StandardTimePiece>30.000</StandardTimePiece>
+          <StandardCost>1919.167</StandardCost>
+          <StandardCostPiece>0.192</StandardCostPiece>
+          <AllowanceTime>85704.000</AllowanceTime>
+          <AllowanceTimePiece>8.570</AllowanceTimePiece>
+          <AllowanceCost>548.268</AllowanceCost>
+          <AllowanceCostPiece>0.055</AllowanceCostPiece>
+          <ToolCount>8.000</ToolCount>
+          <Details>
+            <Detail Type="Standard">
+              <DetailNumber>1</DetailNumber>
+              <DetailName>Load &amp; Unload</DetailName>
+              <Description>
+              </Description>
+              <BurdenCost>2528.179</BurdenCost>
+              <BurdenCostPiece>0.253</BurdenCostPiece>
+              <StandardTime>300000.000</StandardTime>
+              <StandardTimePiece>30.000</StandardTimePiece>
+              <StandardCost>1919.167</StandardCost>
+              <StandardCostPiece>0.192</StandardCostPiece>
+              <AllowanceTime>45000.000</AllowanceTime>
+              <AllowanceTimePiece>4.500</AllowanceTimePiece>
+              <AllowanceCost>287.875</AllowanceCost>
+              <AllowanceCostPiece>0.029</AllowanceCostPiece>
+              <Features />
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>2</DetailNumber>
+              <DetailName>Inspection, CMM, Pockets, Slots, Bosses</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>898.009</BurdenCost>
+              <BurdenCostPiece>0.090</BurdenCostPiece>
+              <ManufacturingTime>106560.000</ManufacturingTime>
+              <ManufacturingTimePiece>10.656</ManufacturingTimePiece>
+              <ManufacturingCost>681.688</ManufacturingCost>
+              <ManufacturingCostPiece>0.068</ManufacturingCostPiece>
+              <AllowanceTime>15984.000</AllowanceTime>
+              <AllowanceTimePiece>1.598</AllowanceTimePiece>
+              <AllowanceCost>102.253</AllowanceCost>
+              <AllowanceCostPiece>0.010</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="304.8" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="Depth" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width+Depth)*NumFeat" UnitMeasure="7" OutputValue="304.8" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="SIDE WALL 1">
+                  <FeatureVariables>
+                    <Variable name="Area" value="5806.440" />
+                    <Variable name="Depth" value="28.575" />
+                    <Variable name="FaceIds" value="551,578,556,550" />
+                    <Variable name="Length" value="304.800" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>3</DetailNumber>
+              <DetailName>Inspection, CMM, Pockets, Slots, Bosses</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>19.046</BurdenCost>
+              <BurdenCostPiece>0.002</BurdenCostPiece>
+              <ManufacturingTime>2260.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.226</ManufacturingTimePiece>
+              <ManufacturingCost>14.458</ManufacturingCost>
+              <ManufacturingCostPiece>0.001</ManufacturingCostPiece>
+              <AllowanceTime>339.000</AllowanceTime>
+              <AllowanceTimePiece>0.034</AllowanceTimePiece>
+              <AllowanceCost>2.169</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Depth" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width+Depth)*NumFeat" UnitMeasure="7" OutputValue="6.4516" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="FACE FEATURE 1">
+                  <FeatureVariables>
+                    <Variable name="Area" value="10.409" />
+                    <Variable name="Arrow" value="0.005,-0.003,2.559,0.005,-0.000,1.227" />
+                    <Variable name="Axis_x" value="-0.000" />
+                    <Variable name="Axis_y" value="0.002" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="Box" value="-1.612,-1.615,1.228,-1.606,1.611,1.228,1.615,-1.612,1.225,-1.612,-1.615,1.228,1.621,1.615,1.225,1.615,-1.612,1.225,-1.606,1.611,1.228,1.621,1.615,1.225" />
+                    <Variable name="Depth" value="0.000" />
+                    <Variable name="Length" value="3.226" />
+                    <Variable name="SetupID" value="1" />
+                    <Variable name="Width" value="3.226" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>4</DetailNumber>
+              <DetailName>Inspection, CMM, Holes</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>244.138</BurdenCost>
+              <BurdenCostPiece>0.024</BurdenCostPiece>
+              <ManufacturingTime>28970.000</ManufacturingTime>
+              <ManufacturingTimePiece>2.897</ManufacturingTimePiece>
+              <ManufacturingCost>185.328</ManufacturingCost>
+              <ManufacturingCostPiece>0.019</ManufacturingCostPiece>
+              <AllowanceTime>4345.500</AllowanceTime>
+              <AllowanceTimePiece>0.435</AllowanceTimePiece>
+              <AllowanceCost>27.799</AllowanceCost>
+              <AllowanceCostPiece>0.003</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia1" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="HoleDepth1" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="NumHoles1" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia2" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="HoleDepth2" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHoles2" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="HoleDepth3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoles3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoleTot" Formula="NumHoles1+NumHoles2+NumHoles3" UnitMeasure="0" OutputValue="2" />
+                <Variable name="Dist" Formula="(((HoleDia1*PI()) + HoleDepth1)*NumHoles1)+(((HoleDia2*PI()) + HoleDepth2)*NumHoles2)+(((HoleDia3*PI()) + HoleDepth3)*NumHoles3)" UnitMeasure="7" OutputValue="82.8658103580623" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="542,548,546,571,570" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>5</DetailNumber>
+              <DetailName>Inspection, CMM, Holes</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>244.138</BurdenCost>
+              <BurdenCostPiece>0.024</BurdenCostPiece>
+              <ManufacturingTime>28970.000</ManufacturingTime>
+              <ManufacturingTimePiece>2.897</ManufacturingTimePiece>
+              <ManufacturingCost>185.328</ManufacturingCost>
+              <ManufacturingCostPiece>0.019</ManufacturingCostPiece>
+              <AllowanceTime>4345.500</AllowanceTime>
+              <AllowanceTimePiece>0.435</AllowanceTimePiece>
+              <AllowanceCost>27.799</AllowanceCost>
+              <AllowanceCostPiece>0.003</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia1" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="HoleDepth1" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="NumHoles1" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia2" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="HoleDepth2" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHoles2" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="HoleDepth3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoles3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoleTot" Formula="NumHoles1+NumHoles2+NumHoles3" UnitMeasure="0" OutputValue="2" />
+                <Variable name="Dist" Formula="(((HoleDia1*PI()) + HoleDepth1)*NumHoles1)+(((HoleDia2*PI()) + HoleDepth2)*NumHoles2)+(((HoleDia3*PI()) + HoleDepth3)*NumHoles3)" UnitMeasure="7" OutputValue="82.8658103580623" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 2">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="545,590,566,568,588" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>6</DetailNumber>
+              <DetailName>Inspection, CMM, Holes</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>244.138</BurdenCost>
+              <BurdenCostPiece>0.024</BurdenCostPiece>
+              <ManufacturingTime>28970.000</ManufacturingTime>
+              <ManufacturingTimePiece>2.897</ManufacturingTimePiece>
+              <ManufacturingCost>185.328</ManufacturingCost>
+              <ManufacturingCostPiece>0.019</ManufacturingCostPiece>
+              <AllowanceTime>4345.500</AllowanceTime>
+              <AllowanceTimePiece>0.435</AllowanceTimePiece>
+              <AllowanceCost>27.799</AllowanceCost>
+              <AllowanceCostPiece>0.003</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia1" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="HoleDepth1" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="NumHoles1" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia2" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="HoleDepth2" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHoles2" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="HoleDepth3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoles3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoleTot" Formula="NumHoles1+NumHoles2+NumHoles3" UnitMeasure="0" OutputValue="2" />
+                <Variable name="Dist" Formula="(((HoleDia1*PI()) + HoleDepth1)*NumHoles1)+(((HoleDia2*PI()) + HoleDepth2)*NumHoles2)+(((HoleDia3*PI()) + HoleDepth3)*NumHoles3)" UnitMeasure="7" OutputValue="82.8658103580623" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 3">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="-1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="547,549,544,560,589" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>7</DetailNumber>
+              <DetailName>Inspection, CMM, Holes</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>244.138</BurdenCost>
+              <BurdenCostPiece>0.024</BurdenCostPiece>
+              <ManufacturingTime>28970.000</ManufacturingTime>
+              <ManufacturingTimePiece>2.897</ManufacturingTimePiece>
+              <ManufacturingCost>185.328</ManufacturingCost>
+              <ManufacturingCostPiece>0.019</ManufacturingCostPiece>
+              <AllowanceTime>4345.500</AllowanceTime>
+              <AllowanceTimePiece>0.435</AllowanceTimePiece>
+              <AllowanceCost>27.799</AllowanceCost>
+              <AllowanceCostPiece>0.003</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="HoleDia1" Formula="" UnitMeasure="7" OutputValue="4.75" />
+                <Variable name="HoleDepth1" Formula="" UnitMeasure="7" OutputValue="28.575" />
+                <Variable name="NumHoles1" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia2" Formula="" UnitMeasure="7" OutputValue="9.5" />
+                <Variable name="HoleDepth2" Formula="" UnitMeasure="7" OutputValue="9.525" />
+                <Variable name="NumHoles2" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="HoleDia3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="HoleDepth3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoles3" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumHoleTot" Formula="NumHoles1+NumHoles2+NumHoles3" UnitMeasure="0" OutputValue="2" />
+                <Variable name="Dist" Formula="(((HoleDia1*PI()) + HoleDepth1)*NumHoles1)+(((HoleDia2*PI()) + HoleDepth2)*NumHoles2)+(((HoleDia3*PI()) + HoleDepth3)*NumHoles3)" UnitMeasure="7" OutputValue="82.8658103580623" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="COUNTERBORE HOLE 4">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="AxisPosition_x" value="-1.250" />
+                    <Variable name="AxisPosition_y" value="1.250" />
+                    <Variable name="AxisPosition_z" value="0.563" />
+                    <Variable name="BoreDepth" value="9.525" />
+                    <Variable name="BoreDiameter" value="9.500" />
+                    <Variable name="FaceIds" value="565,591,567,569,554" />
+                    <Variable name="HoleBottomAngle" value="3.142" />
+                    <Variable name="HoleDepth" value="28.575" />
+                    <Variable name="HoleDepthBottomEnd" value="0.000" />
+                    <Variable name="HoleDiameter" value="4.750" />
+                    <Variable name="SetupID" value="2" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>8</DetailNumber>
+              <DetailName>Inspection, CMM, Pockets, Slots, Bosses</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>374.171</BurdenCost>
+              <BurdenCostPiece>0.037</BurdenCostPiece>
+              <ManufacturingTime>44400.000</ManufacturingTime>
+              <ManufacturingTimePiece>4.440</ManufacturingTimePiece>
+              <ManufacturingCost>284.037</ManufacturingCost>
+              <ManufacturingCostPiece>0.028</ManufacturingCostPiece>
+              <AllowanceTime>6660.000</AllowanceTime>
+              <AllowanceTimePiece>0.666</AllowanceTimePiece>
+              <AllowanceCost>42.606</AllowanceCost>
+              <AllowanceCostPiece>0.004</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="50.8" />
+                <Variable name="Depth" Formula="" UnitMeasure="7" OutputValue="25.4" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width+Depth)*NumFeat" UnitMeasure="7" OutputValue="127" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="POCKET 1">
+                  <FeatureVariables>
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="0.000" />
+                    <Variable name="Axis_z" value="-1.000" />
+                    <Variable name="BottomArea" value="2545.801" />
+                    <Variable name="BottomBoundLength" value="50.800" />
+                    <Variable name="BottomBoundWidth" value="50.800" />
+                    <Variable name="BottomChannelWidth" value="0.000" />
+                    <Variable name="BottomMinCornerRadius" value="6.350" />
+                    <Variable name="BottomPerimeter" value="192.303" />
+                    <Variable name="BottomProfileCentroid_x" value="" />
+                    <Variable name="BottomProfileCentroid_y" value="" />
+                    <Variable name="BottomProfileCentroid_z" value="" />
+                    <Variable name="BottomShape" value="Rectangular" />
+                    <Variable name="EdgeIds" value="453,452,451,442,443,446,455,454" />
+                    <Variable name="EndType" value="1" />
+                    <Variable name="Extrusion" value="1" />
+                    <Variable name="FaceIds" value="553,563,564,559,561,575,579,576,574,573,541,543,572,581,582,583,585,586,584,580,577,558,555,562,557" />
+                    <Variable name="MaximumDepth" value="25.400" />
+                    <Variable name="NumOfSharpCorners" value="0" />
+                    <Variable name="SetupID" value="2" />
+                    <Variable name="TopArea" value="2545.801" />
+                    <Variable name="TopBoundLength" value="50.800" />
+                    <Variable name="TopBoundWidth" value="50.800" />
+                    <Variable name="TopChannelWidth" value="0.000" />
+                    <Variable name="TopEdge-EdgeMapCount" value="8" />
+                    <Variable name="TopEdge-FaceMapCount" value="8" />
+                    <Variable name="TopMinCornerRadius" value="6.350" />
+                    <Variable name="TopPerimeter" value="192.303" />
+                    <Variable name="TopProfileCentroid_x" value="" />
+                    <Variable name="TopProfileCentroid_y" value="" />
+                    <Variable name="TopProfileCentroid_z" value="" />
+                    <Variable name="TopShape" value="Rectangular" />
+                    <Variable name="TypeOfDraft" value="" />
+                    <Variable name="Uniform Draft" value="Uniform Draft" />
+                    <Variable name="Volume" value="64663.355" />
+                    <Variable name="VolumeType" value="1" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+            <Detail Type="Model">
+              <DetailNumber>9</DetailNumber>
+              <DetailName>Inspection, CMM, Pockets, Slots, Bosses</DetailName>
+              <Description>Dimensional Inspection of Features</Description>
+              <BurdenCost>19.046</BurdenCost>
+              <BurdenCostPiece>0.002</BurdenCostPiece>
+              <ManufacturingTime>2260.000</ManufacturingTime>
+              <ManufacturingTimePiece>0.226</ManufacturingTimePiece>
+              <ManufacturingCost>14.458</ManufacturingCost>
+              <ManufacturingCostPiece>0.001</ManufacturingCostPiece>
+              <AllowanceTime>339.000</AllowanceTime>
+              <AllowanceTimePiece>0.034</AllowanceTimePiece>
+              <AllowanceCost>2.169</AllowanceCost>
+              <AllowanceCostPiece>0.000</AllowanceCostPiece>
+              <ToolCount>1.000</ToolCount>
+              <Variables>
+                <Variable name="Length" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Width" Formula="" UnitMeasure="7" OutputValue="3.226" />
+                <Variable name="Depth" Formula="" UnitMeasure="7" OutputValue="0" />
+                <Variable name="NumFeat" Formula="" UnitMeasure="0" OutputValue="1" />
+                <Variable name="Dist" Formula="(Length+Width+Depth)*NumFeat" UnitMeasure="7" OutputValue="6.4516" />
+                <Variable name="Percent" Formula="" UnitMeasure="0" OutputValue="100" />
+                <Variable name="PercentTimeFactor" Formula=".01*Percent" UnitMeasure="0" OutputValue="1" />
+              </Variables>
+              <Features>
+                <Feature name="FACE FEATURE 2">
+                  <FeatureVariables>
+                    <Variable name="Area" value="10.409" />
+                    <Variable name="Arrow" value="0.004,0.006,-1.437,0.004,0.003,-0.105" />
+                    <Variable name="Axis_x" value="0.000" />
+                    <Variable name="Axis_y" value="-0.002" />
+                    <Variable name="Axis_z" value="1.000" />
+                    <Variable name="Box" value="-1.612,-1.612,-0.103,-1.606,1.615,-0.103,1.614,-1.609,-0.106,-1.612,-1.612,-0.103,1.620,1.618,-0.107,1.614,-1.609,-0.106,-1.606,1.615,-0.103,1.620,1.618,-0.107" />
+                    <Variable name="Depth" value="0.000" />
+                    <Variable name="Length" value="3.226" />
+                    <Variable name="SetupID" value="3" />
+                    <Variable name="Width" value="3.226" />
+                  </FeatureVariables>
+                </Feature>
+              </Features>
+            </Detail>
+          </Details>
+        </Operation>
+      </Operations>
+    </Part>
+  </Parts>
+</Costimator>

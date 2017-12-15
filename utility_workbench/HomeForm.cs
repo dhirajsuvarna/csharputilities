@@ -64,5 +64,11 @@ namespace utility_workbench
             DataGridViewForm dataGridViewForm = new DataGridViewForm();
             dataGridViewForm.ShowDialog();
         }
+
+        private void readXMLButton_Click(object sender, EventArgs e)
+        {
+            ReadXMLForm xmlForm = new ReadXMLForm();
+            xmlForm.ShowDialog();
+        }
     }
 }

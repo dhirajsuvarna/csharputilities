@@ -54,6 +54,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +69,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataGridViewForm.cs">
@@ -78,6 +86,12 @@
     </Compile>
     <Compile Include="HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressIndicatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressIndicatorForm.Designer.cs">
+      <DependentUpon>ProgressIndicatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ReadExcelForm.cs">
       <SubType>Form</SubType>
@@ -99,6 +113,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadXMLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadXMLForm.Designer.cs">
+      <DependentUpon>ReadXMLForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WriteExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressIndicatorForm.resx">
+      <DependentUpon>ProgressIndicatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadExcelForm.resx">
       <DependentUpon>ReadExcelForm.cs</DependentUpon>
@@ -129,9 +152,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReadXMLForm.resx">
+      <DependentUpon>ReadXMLForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WriteExcelForm.resx">
       <DependentUpon>WriteExcelForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -33,8 +33,7 @@
             this.InstallAppButton = new System.Windows.Forms.Button();
             this.excelButton = new System.Windows.Forms.Button();
             this.writeExcelButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.readXMLButton = new System.Windows.Forms.Button();
             this.dataGridViewButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -90,27 +89,19 @@
             this.writeExcelButton.UseVisualStyleBackColor = true;
             this.writeExcelButton.Click += new System.EventHandler(this.writeExcelButton_Click);
             // 
-            // button1
+            // readXMLButton
             // 
-            this.button1.Location = new System.Drawing.Point(259, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 42);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Read Request XML";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(16, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 43);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Read Response XML";
-            this.button2.UseVisualStyleBackColor = true;
+            this.readXMLButton.Location = new System.Drawing.Point(259, 78);
+            this.readXMLButton.Name = "readXMLButton";
+            this.readXMLButton.Size = new System.Drawing.Size(106, 42);
+            this.readXMLButton.TabIndex = 5;
+            this.readXMLButton.Text = "Read XML";
+            this.readXMLButton.UseVisualStyleBackColor = true;
+            this.readXMLButton.Click += new System.EventHandler(this.readXMLButton_Click);
             // 
             // dataGridViewButton
             // 
-            this.dataGridViewButton.Location = new System.Drawing.Point(136, 135);
+            this.dataGridViewButton.Location = new System.Drawing.Point(16, 139);
             this.dataGridViewButton.Name = "dataGridViewButton";
             this.dataGridViewButton.Size = new System.Drawing.Size(105, 41);
             this.dataGridViewButton.TabIndex = 7;
@@ -122,10 +113,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 196);
+            this.ClientSize = new System.Drawing.Size(400, 192);
             this.Controls.Add(this.dataGridViewButton);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.readXMLButton);
             this.Controls.Add(this.writeExcelButton);
             this.Controls.Add(this.excelButton);
             this.Controls.Add(this.InstallAppButton);
@@ -147,8 +137,7 @@
         private System.Windows.Forms.Button InstallAppButton;
         private System.Windows.Forms.Button excelButton;
         private System.Windows.Forms.Button writeExcelButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button readXMLButton;
         private System.Windows.Forms.Button dataGridViewButton;
     }
 }
