@@ -35,6 +35,7 @@
             this.writeExcelButton = new System.Windows.Forms.Button();
             this.readXMLButton = new System.Windows.Forms.Button();
             this.dataGridViewButton = new System.Windows.Forms.Button();
+            this.log4netButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CmdButton
@@ -109,11 +110,22 @@
             this.dataGridViewButton.UseVisualStyleBackColor = true;
             this.dataGridViewButton.Click += new System.EventHandler(this.dataGridViewButton_Click);
             // 
+            // log4netButton
+            // 
+            this.log4netButton.Location = new System.Drawing.Point(136, 139);
+            this.log4netButton.Name = "log4netButton";
+            this.log4netButton.Size = new System.Drawing.Size(105, 41);
+            this.log4netButton.TabIndex = 8;
+            this.log4netButton.Text = "Log4Net Sample";
+            this.log4netButton.UseVisualStyleBackColor = true;
+            this.log4netButton.Click += new System.EventHandler(this.log4netButton_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 192);
+            this.ClientSize = new System.Drawing.Size(400, 208);
+            this.Controls.Add(this.log4netButton);
             this.Controls.Add(this.dataGridViewButton);
             this.Controls.Add(this.readXMLButton);
             this.Controls.Add(this.writeExcelButton);
@@ -139,6 +151,7 @@
         private System.Windows.Forms.Button writeExcelButton;
         private System.Windows.Forms.Button readXMLButton;
         private System.Windows.Forms.Button dataGridViewButton;
+        private System.Windows.Forms.Button log4netButton;
     }
 }
 

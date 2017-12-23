@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.excelPathTextBox = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
@@ -37,6 +38,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.excelDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,11 +132,36 @@
             this.searchTextBox.TabIndex = 8;
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(639, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Time Elapsed: ";
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Location = new System.Drawing.Point(737, 103);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(59, 15);
+            this.timeLabel.TabIndex = 10;
+            this.timeLabel.Text = "00:00:00";
+            // 
             // ReadExcelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 598);
+            this.ClientSize = new System.Drawing.Size(1043, 609);
+            this.Controls.Add(this.timeLabel);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -143,6 +172,7 @@
             this.Controls.Add(this.excelPathTextBox);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBox = false;
             this.Name = "ReadExcelForm";
             this.Text = "ExcelUtilityForm";
             ((System.ComponentModel.ISupportInitialize)(this.excelDataGridView)).EndInit();
@@ -162,5 +192,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label timeLabel;
     }
 }

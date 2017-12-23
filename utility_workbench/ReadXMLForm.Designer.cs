@@ -112,6 +112,7 @@
             this.Controls.Add(this.xmlFileTextBox);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "ReadXMLForm";
             this.Text = "ReadXMLForm";
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();

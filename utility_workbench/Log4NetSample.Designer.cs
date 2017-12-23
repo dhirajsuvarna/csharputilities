@@ -1,6 +1,6 @@
 ﻿namespace utility_workbench
 {
-    partial class DataGridViewForm
+    partial class Log4NetSample
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.startButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // DataGridViewForm
+            // startButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.startButton.Location = new System.Drawing.Point(105, 88);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(108, 45);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "Start Logging";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // Log4NetSample
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 293);
+            this.ClientSize = new System.Drawing.Size(337, 217);
+            this.Controls.Add(this.startButton);
+            this.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "DataGridViewForm";
-            this.Text = "DataGridViewForm";
-            this.Load += new System.EventHandler(this.DataGridViewForm_Load);
+            this.Name = "Log4NetSample";
+            this.Text = "Log4Net Sample";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button startButton;
     }
 }

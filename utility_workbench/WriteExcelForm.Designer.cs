@@ -33,7 +33,7 @@
             // 
             // writeExcelButton
             // 
-            this.writeExcelButton.Location = new System.Drawing.Point(118, 53);
+            this.writeExcelButton.Location = new System.Drawing.Point(158, 94);
             this.writeExcelButton.Name = "writeExcelButton";
             this.writeExcelButton.Size = new System.Drawing.Size(125, 48);
             this.writeExcelButton.TabIndex = 0;
@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(467, 278);
             this.Controls.Add(this.writeExcelButton);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
             this.Name = "WriteExcelForm";
             this.Text = "WriteExcelForm";
             this.ResumeLayout(false);

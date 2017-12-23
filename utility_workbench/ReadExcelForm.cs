@@ -98,6 +98,9 @@ namespace utility_workbench
                 excelDataGridView.Columns["Part Name"].ContextMenuStrip = menuStrip;
                 excelDataGridView.Columns["Links"].ContextMenuStrip = menuStrip;
 
+                dataTable.TableName = "dhirajTable";
+                dataTable.WriteXml(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\files\xmldump.xml");
+
                 PerformAutomation();
             }
             catch (Exception exp)
@@ -154,11 +157,11 @@ namespace utility_workbench
             linksColumn.Name = "Links";
             linksColumn.HeaderText = "Links";
             //links.DataPropertyName = ColumnName.ReportsTo.ToString();
-            linksColumn.ActiveLinkColor = Color.White;
-            linksColumn.LinkBehavior = LinkBehavior.SystemDefault;
-            linksColumn.LinkColor = Color.Blue;
-            linksColumn.TrackVisitedState = true;
-            linksColumn.VisitedLinkColor = Color.YellowGreen;
+            //linksColumn.ActiveLinkColor = Color.White;
+            //linksColumn.LinkBehavior = LinkBehavior.SystemDefault;
+            //linksColumn.LinkColor = Color.Blue;
+            //linksColumn.TrackVisitedState = true;
+            //linksColumn.VisitedLinkColor = Color.YellowGreen;
             //linksColumn.Text = "link";
             
 
@@ -177,7 +180,7 @@ namespace utility_workbench
             }
             if(excelDataGridView.Columns[e.ColumnIndex].Name.Equals("Compare"))
             {
-                MessageBox.Show("I have am still not implemented, Please stop clicking ME!!!");
+                MessageBox.Show("I am still not implemented, Please stop clicking ME!!!");
             }
         }
 
@@ -211,17 +214,23 @@ namespace utility_workbench
         #region Execution of Process
 
         BackgroundWorker bwThread = null;
+        Stopwatch stopWatch = new Stopwatch();
         private void excuteButton_Click(object sender, EventArgs e)
         {
             DataGridViewRowCollection rows = excelDataGridView.Rows;
+            stopWatch.Start();
+            timer1.Start();
+            bwThread.RunWorkerAsync(rows); //execute task in background thread
 
-            bwThread.RunWorkerAsync(rows);
+            TimeSpan timeSpan = stopWatch.Elapsed;
+
 
         }
 
         private void heavyTaskCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-
+            stopWatch.Stop();
+            timer1.Stop();
         }
 
         private void progressChanged(object sender, ProgressChangedEventArgs e)
@@ -276,5 +285,10 @@ namespace utility_workbench
         }
 
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeLabel.Text = stopWatch.Elapsed.ToString(@"hh\:mm\:ss");
+        }
     }
 }

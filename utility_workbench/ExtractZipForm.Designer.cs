@@ -92,6 +92,7 @@
             this.Controls.Add(this.ZipFileTextBox);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBox = false;
             this.Name = "ExtractZipForm";
             this.Text = "ExtractZip";
             this.ResumeLayout(false);
