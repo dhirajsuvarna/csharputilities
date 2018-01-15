@@ -89,7 +89,6 @@
             this.excelDataGridView.Location = new System.Drawing.Point(48, 145);
             this.excelDataGridView.MultiSelect = false;
             this.excelDataGridView.Name = "excelDataGridView";
-            this.excelDataGridView.ReadOnly = true;
             this.excelDataGridView.Size = new System.Drawing.Size(956, 286);
             this.excelDataGridView.TabIndex = 4;
             this.excelDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.excelDataGridView_CellContentClick);

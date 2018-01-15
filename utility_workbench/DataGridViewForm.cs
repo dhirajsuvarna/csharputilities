@@ -73,6 +73,10 @@ namespace utility_workbench
             songsDataGridView.MultiSelect = false;
             songsDataGridView.Dock = DockStyle.Fill;
 
+            DataGridViewCheckBoxColumn checkboxColumn = new DataGridViewCheckBoxColumn();
+            checkboxColumn.HeaderText = "Select";
+
+            songsDataGridView.Columns.Add(checkboxColumn);
             songsDataGridView.CellFormatting += new DataGridViewCellFormattingEventHandler(songsDataGridView_CellFormatting);
         }
 

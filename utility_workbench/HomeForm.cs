@@ -22,33 +22,6 @@ namespace utility_workbench
         {
             CmdForm cmdForm = new CmdForm();
             cmdForm.ShowDialog();
-
-            //Process proc = new Process();
-            //proc.StartInfo.FileName = "cmd.exe";
-            ////proc.StartInfo.Arguments = "/c time /t";
-            //proc.StartInfo.Arguments = @"/c robocopy E:\Movies\English\720p\Titanic.1997.720p.Dual.Audio{English-Hindi}BRRip.aaaevilacharya G:\ Titanic.720p.Dual.Audio{English-Hindi}BRRip.aaaevilacharya.mkv";
-            //proc.StartInfo.UseShellExecute = false;
-            //proc.StartInfo.RedirectStandardOutput = true;
-            //proc.StartInfo.CreateNoWindow = true;
-            //proc.OutputDataReceived += Proc_OutputDataReceived;
-
-            //if (proc.Start())
-            //{
-            //    string output = proc.StandardOutput.ReadToEnd();
-            //    MessageBox.Show(output);
-            //    //The /c used in argument of the cmd.exe process exits the command line process and hence
-            //    //closing of process is not required.
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Process Not Started");
-            //}
-            
-        }
-
-        private void Proc_OutputDataReceived(object sender, DataReceivedEventArgs e)
-        {
-            
         }
 
         private void extractZipButton_Click(object sender, EventArgs e)
@@ -85,6 +58,36 @@ namespace utility_workbench
         {
             Log4NetSample logForm = new Log4NetSample();
             logForm.ShowDialog();
+        }
+
+        private void viewSettingsButton_Click(object sender, EventArgs e)
+        {
+            ViewSettings settingsForm = new ViewSettings();
+            settingsForm.Show();
+        }
+
+        private void sendMailButton_Click(object sender, EventArgs e)
+        {
+            SendMailForm sendMailForm = new SendMailForm();
+            sendMailForm.Show();
+        }
+
+        private void copyButton_Click(object sender, EventArgs e)
+        {
+            CopyExampleForm copyExample = new CopyExampleForm();
+            copyExample.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PropertyGridSampleFrom propertyGridSampleForm = new PropertyGridSampleFrom();
+            propertyGridSampleForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ResponseXMLViewer responseXMLViewer = new ResponseXMLViewer();
+            responseXMLViewer.ShowDialog();
         }
     }
 }

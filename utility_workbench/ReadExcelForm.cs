@@ -32,8 +32,13 @@ namespace utility_workbench
             //Context Menu
             menuStrip = createContextMenuStrip();
 
+            excelDataGridView.CellPainting += ExcelDataGridView_CellPainting;
+            excelDataGridView.CellValueChanged += ExcelDataGridView_CellValueChanged;
+            excelDataGridView.CurrentCellDirtyStateChanged += ExcelDataGridView_CurrentCellDirtyStateChanged;
+            
         }
-        
+
+
         private void PerformAutomation()
         {
             string isRegressionSystem = Environment.GetEnvironmentVariable("IsRegressionSystem", EnvironmentVariableTarget.User);
@@ -90,7 +95,7 @@ namespace utility_workbench
 
                 excelDataGridView.DataSource = dataTable.DefaultView;
 
-                //AddCheckBoxColumn();
+                AddCheckBoxColumn();
                 AddStatusColumn();
                 AddLinkColumn();
                 AddButtonColumn();
@@ -102,6 +107,12 @@ namespace utility_workbench
                 dataTable.WriteXml(@"C:\Users\dhiraj\Documents\Visual Studio 2015\Projects\utility_workbench\files\xmldump.xml");
 
                 PerformAutomation();
+
+                //this should be done after databinding is done and the checkbox column is added
+                foreach(DataGridViewRow thisRow in excelDataGridView.Rows)
+                {
+                    thisRow.Cells["SelectParts"].Value = true;
+                }
             }
             catch (Exception exp)
             {
@@ -128,10 +139,14 @@ namespace utility_workbench
 
             checkboxColumn.HeaderText = "Select";
             checkboxColumn.Name = "SelectParts";
-            checkboxColumn.FlatStyle = FlatStyle.Standard;
-            checkboxColumn.TrueValue = true;
+            //checkboxColumn.FlatStyle = FlatStyle.Standard;
+            //checkboxColumn.TrueValue = true;
+            checkboxColumn.ReadOnly = false;
+            
 
+            AddHeaderCheckBox();
             excelDataGridView.Columns.Insert(1, checkboxColumn);
+
         }
 
         private void AddButtonColumn()
@@ -182,6 +197,7 @@ namespace utility_workbench
             {
                 MessageBox.Show("I am still not implemented, Please stop clicking ME!!!");
             }
+
         }
 
         private void excelDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -290,5 +306,101 @@ namespace utility_workbench
         {
             timeLabel.Text = stopWatch.Elapsed.ToString(@"hh\:mm\:ss");
         }
+
+        #region CREATING CHECKBOX COLUMN WITH CHECKBOX HEADER
+
+        CheckBox headerCheckBox = null;
+        private void AddHeaderCheckBox()
+        {
+            headerCheckBox = new CheckBox();
+            headerCheckBox.ThreeState = true;
+            headerCheckBox.Size = new Size(15, 15);
+            headerCheckBox.CheckState = CheckState.Checked;
+
+            headerCheckBox.Click += HeaderCheckBox_Click;
+            excelDataGridView.Controls.Add(headerCheckBox);
+        }
+        private void ResetHeaderCheckBoxLocation(int ColumnIndex, int RowIndex)
+        {
+            //Get the column header cell bounds
+            Rectangle oRectangle = this.excelDataGridView.GetCellDisplayRectangle(ColumnIndex, RowIndex, true);
+
+            Point oPoint = new Point();
+
+            oPoint.X = oRectangle.Location.X + (oRectangle.Width - headerCheckBox.Width) / 2 + 1;
+            oPoint.Y = oRectangle.Location.Y + (oRectangle.Height - headerCheckBox.Height) / 2 + 1;
+
+            //Change the location of the CheckBox to make it stay on the header
+            headerCheckBox.Location = oPoint;
+        }
+
+        private void ExcelDataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (headerCheckBox != null & (e.ColumnIndex == 1 && e.RowIndex == -1))
+                ResetHeaderCheckBoxLocation(e.ColumnIndex, e.RowIndex);
+        }
+
+        private void HeaderCheckBox_Click(object sender, EventArgs e)
+        {
+            if(headerCheckBox.CheckState == CheckState.Checked)
+            {
+                foreach (DataGridViewRow thisRow in excelDataGridView.Rows)
+                {
+                    thisRow.Cells["SelectParts"].Value = true;
+                }
+            }
+            else if(headerCheckBox.CheckState == CheckState.Unchecked)
+            {
+                foreach (DataGridViewRow thisRow in excelDataGridView.Rows)
+                {
+                    thisRow.Cells["SelectParts"].Value = false;
+                }
+            }
+            else if (headerCheckBox.CheckState == CheckState.Indeterminate)
+            {
+                headerCheckBox.CheckState = CheckState.Unchecked;
+                foreach (DataGridViewRow thisRow in excelDataGridView.Rows)
+                {
+                    thisRow.Cells["SelectParts"].Value = false;
+                }
+            }
+
+            excelDataGridView.RefreshEdit();
+        }
+        private void ExcelDataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (excelDataGridView.CurrentCell is DataGridViewCheckBoxCell)
+            {
+                excelDataGridView.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+
+        }
+
+        private void ExcelDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (excelDataGridView.Columns[e.ColumnIndex].Name.Equals("SelectParts"))
+            {
+                int numofCheckCount = (from row in excelDataGridView.Rows.Cast<DataGridViewRow>()
+                                       where row.Cells["SelectParts"].Value != null &&
+                                       (bool)row.Cells["SelectParts"].Value == true
+                                       select row).Count();
+
+                if (numofCheckCount == excelDataGridView.RowCount)
+                {
+                    headerCheckBox.CheckState = CheckState.Checked;
+                }
+                else if (numofCheckCount == 0)
+                {
+                    headerCheckBox.CheckState = CheckState.Unchecked;
+                }
+                else
+                {
+                    headerCheckBox.CheckState = CheckState.Indeterminate;
+                }
+            }
+        }
+
+
+        #endregion
     }
 }

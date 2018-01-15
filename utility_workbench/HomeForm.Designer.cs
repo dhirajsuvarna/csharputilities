@@ -36,6 +36,11 @@
             this.readXMLButton = new System.Windows.Forms.Button();
             this.dataGridViewButton = new System.Windows.Forms.Button();
             this.log4netButton = new System.Windows.Forms.Button();
+            this.viewSettingsButton = new System.Windows.Forms.Button();
+            this.sendMailButton = new System.Windows.Forms.Button();
+            this.copyButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CmdButton
@@ -72,7 +77,7 @@
             // 
             // excelButton
             // 
-            this.excelButton.Location = new System.Drawing.Point(16, 78);
+            this.excelButton.Location = new System.Drawing.Point(16, 82);
             this.excelButton.Name = "excelButton";
             this.excelButton.Size = new System.Drawing.Size(102, 42);
             this.excelButton.TabIndex = 3;
@@ -82,7 +87,7 @@
             // 
             // writeExcelButton
             // 
-            this.writeExcelButton.Location = new System.Drawing.Point(136, 79);
+            this.writeExcelButton.Location = new System.Drawing.Point(136, 80);
             this.writeExcelButton.Name = "writeExcelButton";
             this.writeExcelButton.Size = new System.Drawing.Size(105, 41);
             this.writeExcelButton.TabIndex = 4;
@@ -102,7 +107,7 @@
             // 
             // dataGridViewButton
             // 
-            this.dataGridViewButton.Location = new System.Drawing.Point(16, 139);
+            this.dataGridViewButton.Location = new System.Drawing.Point(16, 138);
             this.dataGridViewButton.Name = "dataGridViewButton";
             this.dataGridViewButton.Size = new System.Drawing.Size(105, 41);
             this.dataGridViewButton.TabIndex = 7;
@@ -112,7 +117,7 @@
             // 
             // log4netButton
             // 
-            this.log4netButton.Location = new System.Drawing.Point(136, 139);
+            this.log4netButton.Location = new System.Drawing.Point(136, 138);
             this.log4netButton.Name = "log4netButton";
             this.log4netButton.Size = new System.Drawing.Size(105, 41);
             this.log4netButton.TabIndex = 8;
@@ -120,11 +125,66 @@
             this.log4netButton.UseVisualStyleBackColor = true;
             this.log4netButton.Click += new System.EventHandler(this.log4netButton_Click);
             // 
+            // viewSettingsButton
+            // 
+            this.viewSettingsButton.Location = new System.Drawing.Point(259, 139);
+            this.viewSettingsButton.Name = "viewSettingsButton";
+            this.viewSettingsButton.Size = new System.Drawing.Size(106, 42);
+            this.viewSettingsButton.TabIndex = 9;
+            this.viewSettingsButton.Text = "View Settings";
+            this.viewSettingsButton.UseVisualStyleBackColor = true;
+            this.viewSettingsButton.Click += new System.EventHandler(this.viewSettingsButton_Click);
+            // 
+            // sendMailButton
+            // 
+            this.sendMailButton.Location = new System.Drawing.Point(382, 79);
+            this.sendMailButton.Name = "sendMailButton";
+            this.sendMailButton.Size = new System.Drawing.Size(106, 43);
+            this.sendMailButton.TabIndex = 10;
+            this.sendMailButton.Text = "Send Mail";
+            this.sendMailButton.UseVisualStyleBackColor = true;
+            this.sendMailButton.Click += new System.EventHandler(this.sendMailButton_Click);
+            // 
+            // copyButton
+            // 
+            this.copyButton.Location = new System.Drawing.Point(382, 21);
+            this.copyButton.Name = "copyButton";
+            this.copyButton.Size = new System.Drawing.Size(106, 42);
+            this.copyButton.TabIndex = 11;
+            this.copyButton.Text = "Copy Examples";
+            this.copyButton.UseVisualStyleBackColor = true;
+            this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(382, 138);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 42);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Settings using PropertyGrid";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(16, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 41);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Read Response XML";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 208);
+            this.ClientSize = new System.Drawing.Size(567, 257);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.copyButton);
+            this.Controls.Add(this.sendMailButton);
+            this.Controls.Add(this.viewSettingsButton);
             this.Controls.Add(this.log4netButton);
             this.Controls.Add(this.dataGridViewButton);
             this.Controls.Add(this.readXMLButton);
@@ -152,6 +212,11 @@
         private System.Windows.Forms.Button readXMLButton;
         private System.Windows.Forms.Button dataGridViewButton;
         private System.Windows.Forms.Button log4netButton;
+        private System.Windows.Forms.Button viewSettingsButton;
+        private System.Windows.Forms.Button sendMailButton;
+        private System.Windows.Forms.Button copyButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

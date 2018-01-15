@@ -85,6 +85,12 @@
     <Compile Include="CmdForm.Designer.cs">
       <DependentUpon>CmdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CopyExampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyExampleForm.Designer.cs">
+      <DependentUpon>CopyExampleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataGridViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +109,28 @@
     <Compile Include="Log4NetSample.Designer.cs">
       <DependentUpon>Log4NetSample.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\my.cs" />
+    <Compile Include="Properties\my.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>my.settings</DependentUpon>
+    </Compile>
     <Compile Include="ProgressIndicatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProgressIndicatorForm.Designer.cs">
       <DependentUpon>ProgressIndicatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyGridSampleFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyGridSampleFrom.Designer.cs">
+      <DependentUpon>PropertyGridSampleFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="ReadExcelForm.cs">
       <SubType>Form</SubType>
@@ -135,6 +158,24 @@
     <Compile Include="ReadXMLForm.Designer.cs">
       <DependentUpon>ReadXMLForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResponseXMLViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResponseXMLViewer.Designer.cs">
+      <DependentUpon>ResponseXMLViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMailForm.Designer.cs">
+      <DependentUpon>SendMailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSettings.Designer.cs">
+      <DependentUpon>ViewSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="WriteExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +184,9 @@
     </Compile>
     <EmbeddedResource Include="CmdForm.resx">
       <DependentUpon>CmdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyExampleForm.resx">
+      <DependentUpon>CopyExampleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewForm.resx">
       <DependentUpon>DataGridViewForm.cs</DependentUpon>
@@ -155,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProgressIndicatorForm.resx">
       <DependentUpon>ProgressIndicatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyGridSampleFrom.resx">
+      <DependentUpon>PropertyGridSampleFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadExcelForm.resx">
       <DependentUpon>ReadExcelForm.cs</DependentUpon>
@@ -177,19 +224,28 @@
     <EmbeddedResource Include="ReadXMLForm.resx">
       <DependentUpon>ReadXMLForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ResponseXMLViewer.resx">
+      <DependentUpon>ResponseXMLViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMailForm.resx">
+      <DependentUpon>SendMailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSettings.resx">
+      <DependentUpon>ViewSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WriteExcelForm.resx">
       <DependentUpon>WriteExcelForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\my.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>my.Designer.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\utility_workbench.Properties.user.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
